@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "51B956182F669EA2E6113FB0"
+               BlueprintIdentifier = "6509728E31A8CB47D675CD7E"
                BuildableName = "libPods-todo-app-syncano-Mantle.a"
                BlueprintName = "Pods-todo-app-syncano-Mantle"
                ReferencedContainer = "container:Pods.xcodeproj">

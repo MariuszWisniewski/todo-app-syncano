@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  todo-app-syncano
+
+  Created by Mariusz Wisniewski on 8/14/15.
+  Copyright (c) 2015 Mariusz Wisniewski. All rights reserved.
+*/
+
+"Add Todo Item TextField Title Placeholder" = "Tytuł";
+"Add Todo Item" = "Dodaj todo";
+"Add Todo Item Confirm Button Title" = "Dodaj";
+"Add Todo Item Cancel Button Title" = "Anuluj";
+
+"Edit Todo Item" = "Edytuj todo";
+"Edit Todo Item Confirm Button Title" = "Zapisz";
+"Edit Todo Item Cancel Button Title" = "Anuluj";
+
+"Delete Todo Item Action Button Title" = "Usuń";
+"Edit Todo Item Action Button Title" = "Edytuj";

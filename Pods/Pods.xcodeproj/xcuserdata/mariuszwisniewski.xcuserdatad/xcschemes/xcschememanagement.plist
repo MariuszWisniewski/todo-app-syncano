@@ -9,12 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-todo-app-syncano-MGSwipeTableCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-todo-app-syncano-Mantle.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-todo-app-syncano-UICKeyChainStore.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-todo-app-syncano-UINavigationItem+Loading.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -31,6 +41,42 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>13AA86E1ED6F9FB9B7E124FA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>32E814817C1F95B8A556D98C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>52A375FA70C435E50922DBEC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5F5BC08B838BF66FA050CC93</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6509728E31A8CB47D675CD7E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>993E56B514AA52AB673E693B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F93DB6F85A6FB43136904251</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

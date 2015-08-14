@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C0D5BA3178221C0221570300"
-               BuildableName = "libPods-todo-app-syncano-syncano-ios.a"
-               BlueprintName = "Pods-todo-app-syncano-syncano-ios"
+               BlueprintIdentifier = "993E56B514AA52AB673E693B"
+               BuildableName = "libPods-todo-app-syncano-UINavigationItem+Loading.a"
+               BlueprintName = "Pods-todo-app-syncano-UINavigationItem+Loading"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

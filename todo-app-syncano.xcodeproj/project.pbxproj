@@ -15,6 +15,10 @@
 		1575F0801B7D4EE100D0E5EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1575F07F1B7D4EE100D0E5EA /* Images.xcassets */; };
 		1575F0831B7D4EE100D0E5EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1575F0811B7D4EE100D0E5EA /* LaunchScreen.xib */; };
 		1575F08F1B7D4EE100D0E5EA /* todo_app_syncanoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1575F08E1B7D4EE100D0E5EA /* todo_app_syncanoTests.swift */; };
+		1575F09A1B7D557A00D0E5EA /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1575F0991B7D557A00D0E5EA /* Todo.swift */; };
+		1575F0A01B7DCAF400D0E5EA /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1575F09F1B7DCAF400D0E5EA /* AppSettings.swift */; };
+		1575F0A71B7DCC9000D0E5EA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1575F0A51B7DCC9000D0E5EA /* Localizable.strings */; };
+		1575F0AA1B7DCD3F00D0E5EA /* String+localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1575F0A91B7DCD3F00D0E5EA /* String+localization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,12 @@
 		1575F0881B7D4EE100D0E5EA /* todo-app-syncanoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "todo-app-syncanoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1575F08D1B7D4EE100D0E5EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1575F08E1B7D4EE100D0E5EA /* todo_app_syncanoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todo_app_syncanoTests.swift; sourceTree = "<group>"; };
+		1575F0991B7D557A00D0E5EA /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		1575F09B1B7D55A800D0E5EA /* todo-app-syncano-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "todo-app-syncano-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		1575F09F1B7DCAF400D0E5EA /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		1575F0A61B7DCC9000D0E5EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1575F0A81B7DCCA300D0E5EA /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1575F0A91B7DCD3F00D0E5EA /* String+localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+localization.swift"; sourceTree = "<group>"; };
 		41B252FB3B53734B71BCAE83 /* libPods-todo-app-syncano.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-todo-app-syncano.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B81786CAABDD95F6F2AB6F /* Pods-todo-app-syncano.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todo-app-syncano.release.xcconfig"; path = "Pods/Target Support Files/Pods-todo-app-syncano/Pods-todo-app-syncano.release.xcconfig"; sourceTree = "<group>"; };
 		E0B0D3A755DCBC2B178C4B81 /* Pods-todo-app-syncano.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todo-app-syncano.debug.xcconfig"; path = "Pods/Target Support Files/Pods-todo-app-syncano/Pods-todo-app-syncano.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,10 +107,14 @@
 			children = (
 				1575F0751B7D4EE100D0E5EA /* AppDelegate.swift */,
 				1575F07A1B7D4EE100D0E5EA /* ViewController.swift */,
+				1575F0991B7D557A00D0E5EA /* Todo.swift */,
+				1575F09F1B7DCAF400D0E5EA /* AppSettings.swift */,
+				1575F0A91B7DCD3F00D0E5EA /* String+localization.swift */,
 				1575F07C1B7D4EE100D0E5EA /* Main.storyboard */,
 				1575F07F1B7D4EE100D0E5EA /* Images.xcassets */,
 				1575F0811B7D4EE100D0E5EA /* LaunchScreen.xib */,
 				1575F0771B7D4EE100D0E5EA /* todo_app_syncano.xcdatamodeld */,
+				1575F09B1B7D55A800D0E5EA /* todo-app-syncano-Bridging-Header.h */,
 				1575F0731B7D4EE100D0E5EA /* Supporting Files */,
 			);
 			path = "todo-app-syncano";
@@ -110,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				1575F0741B7D4EE100D0E5EA /* Info.plist */,
+				1575F0A51B7DCC9000D0E5EA /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -151,6 +166,7 @@
 				1575F06D1B7D4EE100D0E5EA /* Frameworks */,
 				1575F06E1B7D4EE100D0E5EA /* Resources */,
 				191BD9C1BCBC1F8C26F50207 /* Copy Pods Resources */,
+				1575F0981B7D525700D0E5EA /* Update Build Number */,
 			);
 			buildRules = (
 			);
@@ -190,6 +206,7 @@
 				TargetAttributes = {
 					1575F06F1B7D4EE100D0E5EA = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 9F62B3BJJQ;
 					};
 					1575F0871B7D4EE100D0E5EA = {
 						CreatedOnToolsVersion = 6.4;
@@ -204,6 +221,7 @@
 			knownRegions = (
 				en,
 				Base,
+				pl,
 			);
 			mainGroup = 1575F0671B7D4EE100D0E5EA;
 			productRefGroup = 1575F0711B7D4EE100D0E5EA /* Products */;
@@ -222,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1575F07E1B7D4EE100D0E5EA /* Main.storyboard in Resources */,
+				1575F0A71B7DCC9000D0E5EA /* Localizable.strings in Resources */,
 				1575F0831B7D4EE100D0E5EA /* LaunchScreen.xib in Resources */,
 				1575F0801B7D4EE100D0E5EA /* Images.xcassets in Resources */,
 			);
@@ -252,6 +271,20 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		1575F0981B7D525700D0E5EA /* Update Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#Update build number with number of git commits if in release mode\nif [ ${CONFIGURATION} == \"Release\" ]; then\nbuildNumber=$(git rev-list HEAD | wc -l | tr -d ' ')\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\nfi;";
+		};
 		191BD9C1BCBC1F8C26F50207 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,8 +308,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1575F07B1B7D4EE100D0E5EA /* ViewController.swift in Sources */,
+				1575F0AA1B7DCD3F00D0E5EA /* String+localization.swift in Sources */,
 				1575F0761B7D4EE100D0E5EA /* AppDelegate.swift in Sources */,
 				1575F0791B7D4EE100D0E5EA /* todo_app_syncano.xcdatamodeld in Sources */,
+				1575F0A01B7DCAF400D0E5EA /* AppSettings.swift in Sources */,
+				1575F09A1B7D557A00D0E5EA /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +349,15 @@
 				1575F0821B7D4EE100D0E5EA /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		1575F0A51B7DCC9000D0E5EA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1575F0A61B7DCC9000D0E5EA /* en */,
+				1575F0A81B7DCCA300D0E5EA /* pl */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -406,9 +451,13 @@
 			baseConfigurationReference = E0B0D3A755DCBC2B178C4B81 /* Pods-todo-app-syncano.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "todo-app-syncano/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "todo-app-syncano-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -417,9 +466,12 @@
 			baseConfigurationReference = A0B81786CAABDD95F6F2AB6F /* Pods-todo-app-syncano.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "todo-app-syncano/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "todo-app-syncano-Bridging-Header.h";
 			};
 			name = Release;
 		};

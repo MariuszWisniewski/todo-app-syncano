@@ -1,1 +1,1 @@
-../../../syncano-ios/syncano-ios/SCParseManager.h
+../../../../../syncano-ios/syncano-ios/SCParseManager.h

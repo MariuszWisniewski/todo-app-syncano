@@ -23,19 +23,29 @@ PODS:
   - Mantle (2.0.4):
     - Mantle/extobjc (= 2.0.4)
   - Mantle/extobjc (2.0.4)
+  - MGSwipeTableCell (1.5.1)
   - syncano-ios (4.0.0):
     - AFNetworking (~> 2.5)
     - Mantle (~> 2.0)
     - UICKeyChainStore (~> 2.0)
   - UICKeyChainStore (2.0.6)
+  - UINavigationItem+Loading (1.1)
 
 DEPENDENCIES:
-  - syncano-ios
+  - MGSwipeTableCell (~> 1.5)
+  - syncano-ios (from `~/Developing/GitHub/syncano-ios/`)
+  - UINavigationItem+Loading (~> 1.1)
+
+EXTERNAL SOURCES:
+  syncano-ios:
+    :path: ~/Developing/GitHub/syncano-ios/
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   Mantle: 6bee68168423948be0c0c5924832bf3af188e099
+  MGSwipeTableCell: a51fa670c01f0aa048f12af040acebf315223137
   syncano-ios: f52c99b6deba067cedbc943c0118c5f43b885a72
   UICKeyChainStore: c5719c814e8bd69e74e4a0fc09daf8f4d6257a59
+  UINavigationItem+Loading: e61d7963495d8a19b6d3825d867ed60db9b218b6
 
 COCOAPODS: 0.37.2

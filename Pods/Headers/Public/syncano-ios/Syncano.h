@@ -1,1 +1,1 @@
-../../../syncano-ios/syncano-ios/Syncano.h
+../../../../../syncano-ios/syncano-ios/Syncano.h

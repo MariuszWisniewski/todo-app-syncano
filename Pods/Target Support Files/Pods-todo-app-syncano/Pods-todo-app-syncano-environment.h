@@ -48,6 +48,12 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 5
 #define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 4
 
+// MGSwipeTableCell
+#define COCOAPODS_POD_AVAILABLE_MGSwipeTableCell
+#define COCOAPODS_VERSION_MAJOR_MGSwipeTableCell 1
+#define COCOAPODS_VERSION_MINOR_MGSwipeTableCell 5
+#define COCOAPODS_VERSION_PATCH_MGSwipeTableCell 1
+
 // Mantle
 #define COCOAPODS_POD_AVAILABLE_Mantle
 #define COCOAPODS_VERSION_MAJOR_Mantle 2
@@ -65,6 +71,12 @@
 #define COCOAPODS_VERSION_MAJOR_UICKeyChainStore 2
 #define COCOAPODS_VERSION_MINOR_UICKeyChainStore 0
 #define COCOAPODS_VERSION_PATCH_UICKeyChainStore 6
+
+// UINavigationItem+Loading
+#define COCOAPODS_POD_AVAILABLE_UINavigationItem_Loading
+#define COCOAPODS_VERSION_MAJOR_UINavigationItem_Loading 1
+#define COCOAPODS_VERSION_MINOR_UINavigationItem_Loading 1
+#define COCOAPODS_VERSION_PATCH_UINavigationItem_Loading 0
 
 // syncano-ios
 #define COCOAPODS_POD_AVAILABLE_syncano_ios

@@ -1,1 +1,1 @@
-../../../syncano-ios/syncano-ios/SCChannel.h
+../../../../../syncano-ios/syncano-ios/SCChannel.h
