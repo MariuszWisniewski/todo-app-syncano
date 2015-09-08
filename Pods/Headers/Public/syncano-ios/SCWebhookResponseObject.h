@@ -1,1 +1,1 @@
-../../../../../syncano-ios/syncano-ios/SCWebhookResponseObject.h
+../../../syncano-ios/syncano-ios/SCWebhookResponseObject.h

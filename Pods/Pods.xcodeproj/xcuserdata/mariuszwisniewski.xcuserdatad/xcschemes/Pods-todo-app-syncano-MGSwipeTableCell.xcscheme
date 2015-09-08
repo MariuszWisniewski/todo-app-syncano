@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F93DB6F85A6FB43136904251"
+               BlueprintIdentifier = "EDEFE04835D860C2528C62FE"
                BuildableName = "libPods-todo-app-syncano-MGSwipeTableCell.a"
                BlueprintName = "Pods-todo-app-syncano-MGSwipeTableCell"
                ReferencedContainer = "container:Pods.xcodeproj">

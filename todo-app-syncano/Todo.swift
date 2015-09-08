@@ -29,4 +29,9 @@ class Todo: SCDataObject {
             "isCompleted":kAPIisCompletedKey
         ]
     }
+    
+    class func fromDictionary(dictionary: AnyObject!) -> Todo {
+        let todo = SCParseManager.sharedSCParseManager().parsedObjectOfClass(self.classForCoder(), fromJSONObject: dictionary) as! Todo
+        return todo
+    }
 }

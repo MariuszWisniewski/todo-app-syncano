@@ -1,1 +1,1 @@
-../../../../../syncano-ios/syncano-ios/SCDataObject.h
+../../../syncano-ios/syncano-ios/SCDataObject.h

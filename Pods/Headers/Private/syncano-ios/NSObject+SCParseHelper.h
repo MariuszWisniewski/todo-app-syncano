@@ -1,1 +1,1 @@
-../../../../../syncano-ios/syncano-ios/NSObject+SCParseHelper.h
+../../../syncano-ios/syncano-ios/NSObject+SCParseHelper.h

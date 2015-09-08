@@ -1,1 +1,1 @@
-../../../../../syncano-ios/syncano-ios/SCPlease.h
+../../../syncano-ios/syncano-ios/SCPlease.h

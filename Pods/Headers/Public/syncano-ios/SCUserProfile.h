@@ -1,1 +1,1 @@
-../../../../../syncano-ios/syncano-ios/SCUserProfile.h
+../../../syncano-ios/syncano-ios/SCUserProfile.h

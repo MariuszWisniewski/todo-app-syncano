@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "plusButtonPressed")
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Refresh, target: self, action: "refreshButtonPressed")
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -225,7 +225,7 @@ extension ViewController : SCChannelDelegate {
     }
     
     func addItemFromMessage(message: SCChannelNotificationMessage) {
-        let todo = Todo(fromDictionary: message.payload);
+        let todo = Todo.fromDictionary(message.payload)
         self.todoItems += [todo]
         self.insertRowAtIndex(self.todoItems.count - 1)
     }

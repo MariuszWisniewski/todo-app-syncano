@@ -1,1 +1,1 @@
-../../../../../syncano-ios/syncano-ios/SCJSONResponseSerializer.h
+../../../syncano-ios/syncano-ios/SCJSONResponseSerializer.h

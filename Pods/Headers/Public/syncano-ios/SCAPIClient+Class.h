@@ -1,1 +1,1 @@
-../../../../../syncano-ios/syncano-ios/SCAPIClient+Class.h
+../../../syncano-ios/syncano-ios/SCAPIClient+Class.h

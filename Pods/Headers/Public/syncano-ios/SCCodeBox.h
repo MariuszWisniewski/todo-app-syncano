@@ -1,1 +1,1 @@
-../../../../../syncano-ios/syncano-ios/SCCodeBox.h
+../../../syncano-ios/syncano-ios/SCCodeBox.h

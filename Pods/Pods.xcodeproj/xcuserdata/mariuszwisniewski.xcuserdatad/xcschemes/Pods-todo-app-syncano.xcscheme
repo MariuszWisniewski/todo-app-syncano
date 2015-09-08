@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "32E814817C1F95B8A556D98C"
+               BlueprintIdentifier = "A3C58BB6A805F9144F481591"
                BuildableName = "libPods-todo-app-syncano.a"
                BlueprintName = "Pods-todo-app-syncano"
                ReferencedContainer = "container:Pods.xcodeproj">

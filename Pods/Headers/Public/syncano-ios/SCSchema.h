@@ -1,1 +1,1 @@
-../../../../../syncano-ios/syncano-ios/SCSchema.h
+../../../syncano-ios/syncano-ios/SCSchema.h

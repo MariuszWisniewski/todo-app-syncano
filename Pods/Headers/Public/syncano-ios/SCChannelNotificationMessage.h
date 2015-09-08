@@ -1,1 +1,1 @@
-../../../../../syncano-ios/syncano-ios/SCChannelNotificationMessage.h
+../../../syncano-ios/syncano-ios/SCChannelNotificationMessage.h
