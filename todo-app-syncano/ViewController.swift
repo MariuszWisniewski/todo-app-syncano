@@ -88,6 +88,7 @@ class ViewController: UIViewController {
         let todo = Todo()
         todo.isCompleted = false
         todo.channel = kSyncanoChannelName
+        todo.other_permissions = .Full
         self.showAlertController("Add Todo Item".localized(), okActionTitle: "Add Todo Item Confirm Button Title".localized(), cancelActionTitle: "Add Todo Item Cancel Button Title".localized(), todoItem: todo) {}
     }
     
