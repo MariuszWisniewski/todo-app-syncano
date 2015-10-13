@@ -167,6 +167,7 @@
 				1575F06E1B7D4EE100D0E5EA /* Resources */,
 				191BD9C1BCBC1F8C26F50207 /* Copy Pods Resources */,
 				1575F0981B7D525700D0E5EA /* Update Build Number */,
+				2E0D168C04E661B455A9D576 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -300,6 +301,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-todo-app-syncano/Pods-todo-app-syncano-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E0D168C04E661B455A9D576 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-todo-app-syncano/Pods-todo-app-syncano-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

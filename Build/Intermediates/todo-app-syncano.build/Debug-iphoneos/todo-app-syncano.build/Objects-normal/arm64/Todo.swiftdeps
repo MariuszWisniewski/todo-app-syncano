@@ -1,0 +1,320 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "kAPIisCompletedKey"
+- "Todo"
+provides-nominal:
+- "C16todo_app_syncano4Todo"
+provides-member:
+- ["C16todo_app_syncano4Todo", ""]
+provides-dynamic-lookup:
+- "fromDictionary"
+- "setNilValueForKey"
+- "isCompleted"
+- "title"
+- "extendedPropertiesMapping"
+depends-top-level:
+- "Todo"
+- "kAPIisCompletedKey"
+- !private "SCParseManager"
+- "BooleanLiteralType"
+- "SCDataObject"
+- !private "Dictionary"
+- !private "~="
+- "NSObject"
+- "AnyObject"
+- "String"
+- "StringLiteralType"
+depends-member:
+- !private ["PSs9AnyObject", "SCParseManager"]
+- !private ["PSs9AnyObject", "classForCoder"]
+- ["PSs9AnyObject", "extendedPropertiesMapping"]
+- ["PSs9AnyObject", "fromDictionary"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "isCompleted"]
+- !private ["PSs9AnyObject", "kAPIisCompletedKey"]
+- !private ["PSs9AnyObject", "parsedObjectOfClass"]
+- ["PSs9AnyObject", "setNilValueForKey"]
+- !private ["PSs9AnyObject", "sharedSCParseManager"]
+- ["PSs9AnyObject", "title"]
+- ["PSs9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "SCParseManager"]
+- !private ["PSs11CVarArgType", "classForCoder"]
+- ["PSs11CVarArgType", "extendedPropertiesMapping"]
+- ["PSs11CVarArgType", "fromDictionary"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "isCompleted"]
+- !private ["PSs11CVarArgType", "kAPIisCompletedKey"]
+- !private ["PSs11CVarArgType", "parsedObjectOfClass"]
+- ["PSs11CVarArgType", "setNilValueForKey"]
+- !private ["PSs11CVarArgType", "sharedSCParseManager"]
+- ["PSs11CVarArgType", "title"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs14CollectionType", "Key"]
+- !private ["PSs14CollectionType", "Value"]
+- !private ["PSs28CustomDebugStringConvertible", "Key"]
+- !private ["PSs28CustomDebugStringConvertible", "Value"]
+- !private ["PSs23CustomStringConvertible", "Key"]
+- !private ["PSs23CustomStringConvertible", "SCParseManager"]
+- !private ["PSs23CustomStringConvertible", "Value"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "classForCoder"]
+- ["PSs23CustomStringConvertible", "extendedPropertiesMapping"]
+- ["PSs23CustomStringConvertible", "fromDictionary"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "isCompleted"]
+- !private ["PSs23CustomStringConvertible", "kAPIisCompletedKey"]
+- !private ["PSs23CustomStringConvertible", "parsedObjectOfClass"]
+- ["PSs23CustomStringConvertible", "setNilValueForKey"]
+- !private ["PSs23CustomStringConvertible", "sharedSCParseManager"]
+- ["PSs23CustomStringConvertible", "title"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["VSs10Dictionary", "Key"]
+- !private ["VSs10Dictionary", "Value"]
+- !private ["PSs28DictionaryLiteralConvertible", "Key"]
+- !private ["PSs28DictionaryLiteralConvertible", "Value"]
+- !private ["PSs9Equatable", "SCParseManager"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "classForCoder"]
+- ["PSs9Equatable", "extendedPropertiesMapping"]
+- ["PSs9Equatable", "fromDictionary"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "isCompleted"]
+- !private ["PSs9Equatable", "kAPIisCompletedKey"]
+- !private ["PSs9Equatable", "parsedObjectOfClass"]
+- ["PSs9Equatable", "setNilValueForKey"]
+- !private ["PSs9Equatable", "sharedSCParseManager"]
+- ["PSs9Equatable", "title"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "SCParseManager"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "classForCoder"]
+- ["PSs8Hashable", "extendedPropertiesMapping"]
+- ["PSs8Hashable", "fromDictionary"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "isCompleted"]
+- !private ["PSs8Hashable", "kAPIisCompletedKey"]
+- !private ["PSs8Hashable", "parsedObjectOfClass"]
+- ["PSs8Hashable", "setNilValueForKey"]
+- !private ["PSs8Hashable", "sharedSCParseManager"]
+- ["PSs8Hashable", "title"]
+- ["PSs8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["PSs9Indexable", "Key"]
+- !private ["PSs9Indexable", "Value"]
+- !private ["PSo18MTLJSONSerializing", "SCParseManager"]
+- !private ["PSo18MTLJSONSerializing", "classForCoder"]
+- ["PSo18MTLJSONSerializing", "extendedPropertiesMapping"]
+- ["PSo18MTLJSONSerializing", "fromDictionary"]
+- ["PSo18MTLJSONSerializing", "init"]
+- ["PSo18MTLJSONSerializing", "isCompleted"]
+- !private ["PSo18MTLJSONSerializing", "kAPIisCompletedKey"]
+- ["PSo18MTLJSONSerializing", "setNilValueForKey"]
+- ["PSo18MTLJSONSerializing", "title"]
+- ["PSo18MTLJSONSerializing", ""]
+- ["CSo8MTLModel", "AnyObject"]
+- ["CSo8MTLModel", "NSObject"]
+- !private ["CSo8MTLModel", "SCParseManager"]
+- ["CSo8MTLModel", "String"]
+- ["CSo8MTLModel", "Todo"]
+- !private ["CSo8MTLModel", "classForCoder"]
+- ["CSo8MTLModel", "extendedPropertiesMapping"]
+- ["CSo8MTLModel", "fromDictionary"]
+- ["CSo8MTLModel", "init"]
+- ["CSo8MTLModel", "isCompleted"]
+- !private ["CSo8MTLModel", "kAPIisCompletedKey"]
+- ["CSo8MTLModel", "setNilValueForKey"]
+- ["CSo8MTLModel", "title"]
+- !private ["PSo16MTLModelProtocol", "SCParseManager"]
+- !private ["PSo16MTLModelProtocol", "classForCoder"]
+- ["PSo16MTLModelProtocol", "extendedPropertiesMapping"]
+- ["PSo16MTLModelProtocol", "fromDictionary"]
+- ["PSo16MTLModelProtocol", "init"]
+- ["PSo16MTLModelProtocol", "isCompleted"]
+- !private ["PSo16MTLModelProtocol", "kAPIisCompletedKey"]
+- ["PSo16MTLModelProtocol", "setNilValueForKey"]
+- ["PSo16MTLModelProtocol", "title"]
+- ["PSo16MTLModelProtocol", ""]
+- !private ["PSo8NSCoding", "SCParseManager"]
+- !private ["PSo8NSCoding", "classForCoder"]
+- ["PSo8NSCoding", "extendedPropertiesMapping"]
+- ["PSo8NSCoding", "fromDictionary"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "isCompleted"]
+- !private ["PSo8NSCoding", "kAPIisCompletedKey"]
+- ["PSo8NSCoding", "setNilValueForKey"]
+- ["PSo8NSCoding", "title"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "SCParseManager"]
+- !private ["PSo9NSCopying", "classForCoder"]
+- ["PSo9NSCopying", "extendedPropertiesMapping"]
+- ["PSo9NSCopying", "fromDictionary"]
+- ["PSo9NSCopying", "init"]
+- ["PSo9NSCopying", "isCompleted"]
+- !private ["PSo9NSCopying", "kAPIisCompletedKey"]
+- ["PSo9NSCopying", "setNilValueForKey"]
+- ["PSo9NSCopying", "title"]
+- ["PSo9NSCopying", ""]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "NSObject"]
+- !private ["CSo8NSObject", "SCParseManager"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "Todo"]
+- !private ["CSo8NSObject", "classForCoder"]
+- !private ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "extendedPropertiesMapping"]
+- ["CSo8NSObject", "fromDictionary"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "isCompleted"]
+- !private ["CSo8NSObject", "kAPIisCompletedKey"]
+- !private ["CSo8NSObject", "parsedObjectOfClass"]
+- ["CSo8NSObject", "setNilValueForKey"]
+- !private ["CSo8NSObject", "sharedSCParseManager"]
+- ["CSo8NSObject", "title"]
+- !private ["PSo16NSObjectProtocol", "SCParseManager"]
+- !private ["PSo16NSObjectProtocol", "classForCoder"]
+- ["PSo16NSObjectProtocol", "extendedPropertiesMapping"]
+- ["PSo16NSObjectProtocol", "fromDictionary"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "isCompleted"]
+- !private ["PSo16NSObjectProtocol", "kAPIisCompletedKey"]
+- !private ["PSo16NSObjectProtocol", "parsedObjectOfClass"]
+- ["PSo16NSObjectProtocol", "setNilValueForKey"]
+- !private ["PSo16NSObjectProtocol", "sharedSCParseManager"]
+- ["PSo16NSObjectProtocol", "title"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["CSo8NSString", "deinit"]
+- !private ["VSs5Range", "deinit"]
+- ["CSo12SCDataObject", "AnyObject"]
+- ["CSo12SCDataObject", "NSObject"]
+- !private ["CSo12SCDataObject", "SCParseManager"]
+- ["CSo12SCDataObject", "String"]
+- ["CSo12SCDataObject", "Todo"]
+- !private ["CSo12SCDataObject", "classForCoder"]
+- ["CSo12SCDataObject", "extendedPropertiesMapping"]
+- ["CSo12SCDataObject", "fromDictionary"]
+- ["CSo12SCDataObject", "init"]
+- ["CSo12SCDataObject", "isCompleted"]
+- !private ["CSo12SCDataObject", "kAPIisCompletedKey"]
+- ["CSo12SCDataObject", "setNilValueForKey"]
+- ["CSo12SCDataObject", "title"]
+- ["CSo12SCDataObject", ""]
+- !private ["CSo14SCParseManager", "parsedObjectOfClass"]
+- !private ["CSo14SCParseManager", "sharedSCParseManager"]
+- !private ["PSs12SequenceType", "Key"]
+- !private ["PSs12SequenceType", "Value"]
+- !private ["SS", "deinit"]
+- ["C16todo_app_syncano4Todo", "AnyObject"]
+- ["C16todo_app_syncano4Todo", "NSObject"]
+- !private ["C16todo_app_syncano4Todo", "SCParseManager"]
+- ["C16todo_app_syncano4Todo", "String"]
+- ["C16todo_app_syncano4Todo", "Todo"]
+- !private ["C16todo_app_syncano4Todo", "classForCoder"]
+- ["C16todo_app_syncano4Todo", "deinit"]
+- ["C16todo_app_syncano4Todo", "extendedPropertiesMapping"]
+- ["C16todo_app_syncano4Todo", "fromDictionary"]
+- ["C16todo_app_syncano4Todo", "init"]
+- ["C16todo_app_syncano4Todo", "isCompleted"]
+- !private ["C16todo_app_syncano4Todo", "kAPIisCompletedKey"]
+- ["C16todo_app_syncano4Todo", "setNilValueForKey"]
+- ["C16todo_app_syncano4Todo", "title"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "Key"]
+- !private ["PSs21_ObjectiveCBridgeable", "Value"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs12_Reflectable", "Key"]
+- !private ["PSs12_Reflectable", "Value"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- !private "PSs14CollectionType"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "VSs10Dictionary"
+- !private "PSs28DictionaryLiteralConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- !private "SQ"
+- !private "PSs9Indexable"
+- "PSo18MTLJSONSerializing"
+- "CSo8MTLModel"
+- "PSo16MTLModelProtocol"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo8NSString"
+- !private "VSs5Range"
+- "CSo12SCDataObject"
+- !private "CSo14SCParseManager"
+- !private "PSs12SequenceType"
+- !private "SS"
+- "C16todo_app_syncano4Todo"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/todo-app-syncano-Bridging-Header.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/Syncano.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/SCMacros.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/SCConstants.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/SCPlease.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/SCDataObject.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/Mantle/Mantle.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/Mantle/MTLJSONAdapter.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/Mantle/MTLModel.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/Mantle/MTLModel+NSCoding.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/Mantle/MTLValueTransformer.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/Mantle/MTLTransformerErrorHandling.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/Mantle/NSArray+MTLManipulationAdditions.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/Mantle/NSDictionary+MTLManipulationAdditions.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/Mantle/NSDictionary+MTLMappingAdditions.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/Mantle/NSObject+MTLComparisonAdditions.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/Mantle/NSValueTransformer+MTLInversionAdditions.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/Mantle/NSValueTransformer+MTLPredefinedTransformerAdditions.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/SCPredicate.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/SCPredicateProtocol.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/SCCompoundPredicate.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/SCParseManager.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/Mantle/NSError+MTLModelException.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/SCParseManager+SCDataObject.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/SCParseManager+SCUser.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/SCAPIClient.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/AFNetworking/AFHTTPSessionManager.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/AFNetworking/AFURLSessionManager.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/AFNetworking/AFURLResponseSerialization.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/AFNetworking/AFURLRequestSerialization.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/AFNetworking/AFSecurityPolicy.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/AFNetworking/AFNetworkReachabilityManager.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/SCUser.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/SCUserProfile.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/SCCodeBox.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/SCTrace.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/SCWebhook.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/SCWebhookResponseObject.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/SCChannel.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/SCChannelDelegate.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/SCChannelNotificationMessage.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/syncano-ios/SCFile.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/UINavigationItem+Loading/UINavigationItem+Loading.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/MGSwipeTableCell/MGSwipeTableCell.h"
+- "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Pods/Headers/Public/MGSwipeTableCell/MGSwipeButton.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+interface-hash: "5b10204c2b3a9db6136f1ef2833264d2"

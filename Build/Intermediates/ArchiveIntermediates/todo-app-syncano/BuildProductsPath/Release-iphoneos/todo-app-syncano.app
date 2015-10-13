@@ -1,0 +1,1 @@
+/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Build/Intermediates/ArchiveIntermediates/todo-app-syncano/InstallationBuildProductsLocation/Applications/todo-app-syncano.app

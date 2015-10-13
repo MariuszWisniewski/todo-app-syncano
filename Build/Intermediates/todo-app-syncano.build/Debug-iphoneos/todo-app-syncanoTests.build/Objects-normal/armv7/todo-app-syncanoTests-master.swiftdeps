@@ -1,0 +1,5 @@
+version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
+options: "407937e183fb14bc8a16f8eea2541bb4"
+build_time: [498088628, 319257000]
+inputs: 
+	"/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/todo-app-syncanoTests/todo_app_syncanoTests.swift": [492819425, 0]
