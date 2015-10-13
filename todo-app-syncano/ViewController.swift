@@ -62,9 +62,9 @@ class ViewController: UIViewController {
         let alertController = UIAlertController(title: title, message: nil, preferredStyle: .Alert)
         
         let okAction = UIAlertAction(title: okActionTitle, style: .Default) { _ in
-            let titleTextField = alertController.textFields![0] as! UITextField
+            let titleTextField = alertController.textFields![0] 
             // isCompleted should be always false for new items
-            todoItem.title = titleTextField.text
+            todoItem.title = titleTextField.text!
             self.saveTodoItemToSyncano(todoItem)
             finalAction()
         }
@@ -215,7 +215,7 @@ extension ViewController : SCChannelDelegate {
     
     func findArrayIndexOfTodoItem(todo: Todo?) -> Int? {
         if let todoItem = todo {
-            return find(self.todoItems, todoItem)
+            return self.todoItems.indexOf(todoItem)
         }
         return nil
     }

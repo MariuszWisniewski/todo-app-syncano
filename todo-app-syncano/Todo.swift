@@ -22,7 +22,6 @@ class Todo: SCDataObject {
             break
         }
     }
-
     
     override class func extendedPropertiesMapping() -> [NSObject: AnyObject] {
         return [

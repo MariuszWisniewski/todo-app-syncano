@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Mantle.h>
+#import "Mantle.h"
 #import "SCConstants.h"
 
 @class Syncano;
@@ -26,6 +26,7 @@
 @property (nonatomic,copy) NSString *channel_room;
 @property (nonatomic,copy) NSString *channel;
 @property (nonatomic,copy) NSNumber *group;
+@property (nonatomic,copy) NSNumber *owner;
 @property (nonatomic) SCDataObjectPermissionType owner_permissions;
 @property (nonatomic) SCDataObjectPermissionType group_permissions;
 @property (nonatomic) SCDataObjectPermissionType other_permissions;
@@ -64,6 +65,15 @@
  *  Registers class in SCParseManager for proper model parsing.
  */
 + (void)registerClass;
+
+/**
+ *  Returns SCDataObject instance created by parsing dictionary passed as a parameter
+ *
+ *  @param dictionary Dictionary with properties used to initialize new object
+ *
+ *  @return SCDataObject (or a subclass) created from provided dictionary
+ */
++ (instancetype)objectFromDictionary:(NSDictionary *)dictionary;
 
 /**
  *  Saves object to API in background for singleton default Syncano instance

@@ -20,11 +20,11 @@ PODS:
   - AFNetworking/UIKit (2.6.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - Mantle (2.0.4):
-    - Mantle/extobjc (= 2.0.4)
-  - Mantle/extobjc (2.0.4)
+  - Mantle (2.0.5):
+    - Mantle/extobjc (= 2.0.5)
+  - Mantle/extobjc (2.0.5)
   - MGSwipeTableCell (1.5.1)
-  - syncano-ios (4.0.0):
+  - syncano-ios (4.0.2):
     - AFNetworking (~> 2.5)
     - Mantle (~> 2.0)
     - UICKeyChainStore (~> 2.0)
@@ -38,10 +38,10 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
-  Mantle: 6bee68168423948be0c0c5924832bf3af188e099
+  Mantle: 1912395033f601de5adc8ee91e48f46e4c7051ad
   MGSwipeTableCell: a51fa670c01f0aa048f12af040acebf315223137
-  syncano-ios: f52c99b6deba067cedbc943c0118c5f43b885a72
+  syncano-ios: 18fa9249c6260edf7433cf0dc04e0fd1f56d5ae2
   UICKeyChainStore: c5719c814e8bd69e74e4a0fc09daf8f4d6257a59
   UINavigationItem+Loading: e61d7963495d8a19b6d3825d867ed60db9b218b6
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.39.0.beta.4

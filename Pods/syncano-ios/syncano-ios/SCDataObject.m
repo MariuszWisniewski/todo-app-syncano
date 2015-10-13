@@ -57,6 +57,10 @@
     return [SCPlease pleaseInstanceForDataObjectWithClass:[self class] forSyncano:syncano];
 }
 
++ (instancetype)objectFromDictionary:(NSDictionary *)dictionary {
+    return [[SCParseManager sharedSCParseManager] parsedObjectOfClass:self fromJSONObject:dictionary];
+}
+
 - (NSString *)pathForObject {
     if (self.links[@"self"]) {
         return self.links[@"self"];
@@ -148,6 +152,17 @@
 }
 - (void)updateValue:(id)value forKey:(NSString *)key inSyncano:(Syncano *)syncano withCompletion:(SCCompletionBlock)completion {
     [self updateValue:value forKey:key usingAPIClient:syncano.apiClient withCompletion:completion];
+}
+
+
+/**
+ * In API it's possible to have attributes without any values. In this case, when parsing JSON
+ * we will try to set a nil value for certain key. This works well in Obj-C but causes a crash
+ * when Swift Class properties are not of optional type
+ *
+ * Implementing this method lets Swift app avoid crashing
+ */
+- (void)setNilValueForKey:(NSString *)key {
 }
 
 - (void)updateValue:(id)value forKey:(NSString *)key usingAPIClient:(SCAPIClient *)apiClient withCompletion:(SCCompletionBlock)completion {
