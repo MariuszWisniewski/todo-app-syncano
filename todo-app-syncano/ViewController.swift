@@ -177,16 +177,23 @@ extension ViewController: UITableViewDataSource {
                 })
             ]
             cell?.selectionStyle = .None
+            cell?.textLabel?.font = UIFont.systemFontOfSize(20)
+            cell?.textLabel?.numberOfLines = 0
         }
         
         let todo = self.todoItems[indexPath.row]
         
         cell?.textLabel?.text = todo.title
+        let title = NSMutableAttributedString(string: todo.title)
         if (todo.isCompleted) {
             cell?.accessoryType = .Checkmark
+            title.addAttribute(NSStrikethroughStyleAttributeName, value: 1, range: NSMakeRange(0, todo.title.characters.count))
+            // using text on label
         } else {
             cell?.accessoryType = .None
+            title.removeAttribute(NSStrikethroughStyleAttributeName, range: NSMakeRange(0, todo.title.characters.count))
         }
+        cell?.textLabel?.attributedText = title
         
         return cell!
     }
@@ -198,6 +205,10 @@ extension ViewController: UITableViewDelegate {
         let todo = self.todoItems[indexPath.row]
         self.reverseTodoItemCompletedStateAtSyncano(todo)
         self.reloadRowAtIndex(indexPath.row)
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 60
     }
 }
 
