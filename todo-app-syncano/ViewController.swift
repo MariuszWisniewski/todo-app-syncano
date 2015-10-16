@@ -255,6 +255,9 @@ extension ViewController : SCChannelDelegate {
     }
     
     func chanellDidReceivedNotificationMessage(notificationMessage: SCChannelNotificationMessage!) {
+        if (notificationMessage.payload == nil) {
+            return
+        }
         switch(notificationMessage.action) {
         case .Create:
             self.addItemFromMessage(notificationMessage)
