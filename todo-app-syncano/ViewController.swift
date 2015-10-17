@@ -150,6 +150,32 @@ class ViewController: UIViewController {
 
 // MARK: - UITableViewDataSource
 extension ViewController: UITableViewDataSource {
+    
+    func giveMeNewSwipeCell(tableView : UITableView, identifier: String) -> MGSwipeTableCell {
+        let cell = MGSwipeTableCell(style: .Default, reuseIdentifier: identifier)
+        cell.rightButtons = [
+            MGSwipeButton(title: "Delete Todo Item Action Button Title".localized(), backgroundColor: UIColor.redColor(), callback: { cell -> Bool in
+                let indexPath = tableView.indexPathForCell(cell)
+                if let row = indexPath?.row {
+                    self.deleteTodoItemAtIndex(row)
+                }
+                return true
+            }),
+            MGSwipeButton(title: "Edit Todo Item Action Button Title".localized(), backgroundColor: UIColor.lightGrayColor(), callback: { cell -> Bool in
+                let indexPath = tableView.indexPathForCell(cell)
+                if let row = indexPath?.row {
+                    self.editTodoItemAtIndex(row)
+                }
+                return true
+            })
+        ]
+        cell.selectionStyle = .None
+        cell.textLabel?.font = UIFont.systemFontOfSize(20)
+        cell.textLabel?.numberOfLines = 0
+        
+        return cell
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.todoItems.count
     }
@@ -159,26 +185,7 @@ extension ViewController: UITableViewDataSource {
         
         var cell: MGSwipeTableCell? = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? MGSwipeTableCell
         if (cell == nil) {
-            cell = MGSwipeTableCell(style: .Default, reuseIdentifier: cellIdentifier)
-            cell?.rightButtons = [
-                MGSwipeButton(title: "Delete Todo Item Action Button Title".localized(), backgroundColor: UIColor.redColor(), callback: { cell -> Bool in
-                    let indexPath = tableView.indexPathForCell(cell)
-                    if let row = indexPath?.row {
-                        self.deleteTodoItemAtIndex(row)
-                    }
-                    return true
-                }),
-                MGSwipeButton(title: "Edit Todo Item Action Button Title".localized(), backgroundColor: UIColor.lightGrayColor(), callback: { cell -> Bool in
-                    let indexPath = tableView.indexPathForCell(cell)
-                    if let row = indexPath?.row {
-                        self.editTodoItemAtIndex(row)
-                    }
-                    return true
-                })
-            ]
-            cell?.selectionStyle = .None
-            cell?.textLabel?.font = UIFont.systemFontOfSize(20)
-            cell?.textLabel?.numberOfLines = 0
+            cell = self.giveMeNewSwipeCell(tableView, identifier: cellIdentifier)
         }
         
         let todo = self.todoItems[indexPath.row]

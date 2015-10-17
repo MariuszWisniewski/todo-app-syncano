@@ -6,82 +6,92 @@ provides-nominal:
 provides-member:
 - ["C16todo_app_syncano14ViewController", ""]
 provides-dynamic-lookup:
-- "deleteItemFromMessage"
-- "saveTodoItemToSyncano"
-- "didReceiveMemoryWarning"
+- "refreshButtonPressed"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "deleteTodoItemFromSyncano"
+- "todoItems"
 - "findTodoObjectWithIdInArray"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "channel"
-- "reverseTodoItemCompletedStateAtSyncano"
-- "plusButtonPressed"
-- "showAlertController"
-- "deleteTodoItemAtIndex"
-- "viewDidLoad"
+- "updateItemFromMessage"
+- "getObjectIdFromMessage"
+- "reloadRowAtIndex"
+- "stopLoadingAnimation"
+- "downloadTodoItemsFromSyncano"
 - "addItemFromMessage"
+- "channel"
+- "chanellDidReceivedNotificationMessage"
+- "didReceiveMemoryWarning"
+- "plusButtonPressed"
+- "setupUI"
+- "showAlertController"
+- "deleteItemFromMessage"
+- "reverseTodoItemCompletedStateAtSyncano"
+- "giveMeNewSwipeCell"
+- "syncano"
+- "deleteTodoItemAtIndex"
 - "reloadTableView"
 - "insertRowAtIndex"
+- "viewDidLoad"
 - "deleteRowAtIndex"
 - "editTodoItemAtIndex"
 - "startLoadingAnimation"
-- "refreshButtonPressed"
-- "syncano"
-- "deleteTodoItemFromSyncano"
-- "setupUI"
-- "reloadRowAtIndex"
-- "updateItemFromMessage"
-- "getObjectIdFromMessage"
-- "stopLoadingAnimation"
-- "todoItems"
-- "downloadTodoItemsFromSyncano"
-- "chanellDidReceivedNotificationMessage"
+- "saveTodoItemToSyncano"
 depends-top-level:
-- "Syncano"
-- !private "UIAlertController"
-- !private "+="
-- !private "kSyncanoChannelName"
-- "NSIndexPath"
-- "String"
-- !private "!"
-- "SCChannelDelegate"
-- !private "BooleanLiteralType"
-- "SCChannel"
-- !private "NSOperationQueue"
-- !private "!="
-- !private "UIColor"
-- !private "UITextFieldTextDidChangeNotification"
-- "UIViewController"
-- !private "MGSwipeButton"
-- "Todo"
-- !private "UIBarButtonItem"
-- !private "=="
-- !private "-"
-- !private "UIAlertAction"
-- !private "MGSwipeTableCell"
-- !private "kSyncanoMessagePayloadTitleKey"
-- "UITableViewCell"
 - !private "Array"
-- !private "kAPIisCompletedKey"
-- "Int"
-- !private "Bool"
-- "UITableViewDataSource"
+- "String"
+- !private "-"
+- !private "BooleanLiteralType"
+- !private "UIBarButtonItem"
 - "UITableViewDelegate"
-- "kSyncanoInstanceName"
-- "SCChannelNotificationMessage"
-- !private "NSNotificationCenter"
-- "kSyncanoApiKey"
-- "ViewController"
-- "UITableView"
+- !private "+="
+- !private "UIFont"
 - !private "kSyncanoMessagePayloadIdKey"
+- "SCChannelDelegate"
+- "UITableView"
+- "SCChannelNotificationMessage"
+- !private "NSStrikethroughStyleAttributeName"
+- "ViewController"
+- "MGSwipeTableCell"
+- !private "UITextFieldTextDidChangeNotification"
+- "kSyncanoInstanceName"
+- !private "NSOperationQueue"
+- !private "MGSwipeButton"
+- !private "!="
+- !private "!"
+- !private "NSMakeRange"
+- "kSyncanoApiKey"
+- !private "UIAlertController"
+- !private "kSyncanoMessagePayloadTitleKey"
+- !private "kAPIisCompletedKey"
+- !private "UIAlertAction"
+- "Int"
+- "Syncano"
+- "UITableViewDataSource"
+- !private "Bool"
+- "CGFloat"
+- !private "kSyncanoChannelName"
+- "SCChannel"
+- "Todo"
+- !private "UIColor"
+- "NSIndexPath"
+- "UIViewController"
+- !private "NSMutableAttributedString"
+- !private "NSNotificationCenter"
+- "UITableViewCell"
+- !private "=="
 depends-member:
 - !private ["OSC22ANNavBarLoaderPosition", "Center"]
 - !private ["PSs9AnyObject", "MGSwipeButton"]
 - !private ["PSs9AnyObject", "MGSwipeTableCell"]
 - !private ["PSs9AnyObject", "NSIndexPath"]
+- !private ["PSs9AnyObject", "NSMakeRange"]
+- !private ["PSs9AnyObject", "NSMutableAttributedString"]
 - !private ["PSs9AnyObject", "NSNotificationCenter"]
 - !private ["PSs9AnyObject", "NSOperationQueue"]
+- !private ["PSs9AnyObject", "NSStrikethroughStyleAttributeName"]
 - !private ["PSs9AnyObject", "SCChannel"]
 - ["PSs9AnyObject", "Syncano"]
 - ["PSs9AnyObject", "Todo"]
@@ -89,17 +99,22 @@ depends-member:
 - !private ["PSs9AnyObject", "UIAlertController"]
 - !private ["PSs9AnyObject", "UIBarButtonItem"]
 - !private ["PSs9AnyObject", "UIColor"]
+- !private ["PSs9AnyObject", "UIFont"]
 - !private ["PSs9AnyObject", "UITextFieldTextDidChangeNotification"]
 - !private ["PSs9AnyObject", "accessoryType"]
 - !private ["PSs9AnyObject", "action"]
 - !private ["PSs9AnyObject", "addAction"]
+- !private ["PSs9AnyObject", "addAttribute"]
 - ["PSs9AnyObject", "addItemFromMessage"]
 - !private ["PSs9AnyObject", "addObserverForName"]
 - !private ["PSs9AnyObject", "addTextFieldWithConfigurationHandler"]
+- !private ["PSs9AnyObject", "attributedText"]
 - ["PSs9AnyObject", "chanellDidReceivedNotificationMessage"]
 - ["PSs9AnyObject", "channel"]
 - ["PSs9AnyObject", "channel.storage"]
+- !private ["PSs9AnyObject", "characters"]
 - !private ["PSs9AnyObject", "defaultCenter"]
+- !private ["PSs9AnyObject", "deinit"]
 - ["PSs9AnyObject", "deleteItemFromMessage"]
 - ["PSs9AnyObject", "deleteRowAtIndex"]
 - !private ["PSs9AnyObject", "deleteRowsAtIndexPaths"]
@@ -114,9 +129,11 @@ depends-member:
 - ["PSs9AnyObject", "findArrayIndexOfTodoItem"]
 - ["PSs9AnyObject", "findArrayIndexOfTodoObjectWithId"]
 - ["PSs9AnyObject", "findTodoObjectWithIdInArray"]
+- !private ["PSs9AnyObject", "font"]
 - !private ["PSs9AnyObject", "fromDictionary"]
 - ["PSs9AnyObject", "getObjectIdFromMessage"]
 - !private ["PSs9AnyObject", "giveMeDataObjectsWithCompletion"]
+- ["PSs9AnyObject", "giveMeNewSwipeCell"]
 - !private ["PSs9AnyObject", "indexPathForCell"]
 - ["PSs9AnyObject", "init"]
 - ["PSs9AnyObject", "insertRowAtIndex"]
@@ -133,6 +150,7 @@ depends-member:
 - !private ["PSs9AnyObject", "localized"]
 - !private ["PSs9AnyObject", "mainQueue"]
 - !private ["PSs9AnyObject", "navigationItem"]
+- !private ["PSs9AnyObject", "numberOfLines"]
 - ["PSs9AnyObject", "numberOfSectionsInTableView"]
 - !private ["PSs9AnyObject", "objectId"]
 - !private ["PSs9AnyObject", "other_permissions"]
@@ -147,6 +165,7 @@ depends-member:
 - ["PSs9AnyObject", "reloadRowAtIndex"]
 - !private ["PSs9AnyObject", "reloadRowsAtIndexPaths"]
 - ["PSs9AnyObject", "reloadTableView"]
+- !private ["PSs9AnyObject", "removeAttribute"]
 - ["PSs9AnyObject", "reverseTodoItemCompletedStateAtSyncano"]
 - !private ["PSs9AnyObject", "rightBarButtonItem"]
 - !private ["PSs9AnyObject", "rightButtons"]
@@ -176,6 +195,7 @@ depends-member:
 - ["PSs9AnyObject", "stopLoadingAnimation"]
 - !private ["PSs9AnyObject", "subscribeToChannel"]
 - ["PSs9AnyObject", "syncano"]
+- !private ["PSs9AnyObject", "systemFontOfSize"]
 - ["PSs9AnyObject", "tableView"]
 - !private ["PSs9AnyObject", "text"]
 - !private ["PSs9AnyObject", "textFields"]
@@ -226,13 +246,17 @@ depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["PSs11CVarArgType", "Distance"]
 - !private ["PSs11CVarArgType", "IntegerLiteralType"]
 - !private ["PSs11CVarArgType", "MGSwipeButton"]
 - !private ["PSs11CVarArgType", "MGSwipeTableCell"]
 - !private ["PSs11CVarArgType", "NSIndexPath"]
+- !private ["PSs11CVarArgType", "NSMakeRange"]
+- !private ["PSs11CVarArgType", "NSMutableAttributedString"]
 - !private ["PSs11CVarArgType", "NSNotificationCenter"]
 - !private ["PSs11CVarArgType", "NSOperationQueue"]
+- !private ["PSs11CVarArgType", "NSStrikethroughStyleAttributeName"]
 - !private ["PSs11CVarArgType", "SCChannel"]
 - !private ["PSs11CVarArgType", "Stride"]
 - ["PSs11CVarArgType", "Syncano"]
@@ -241,16 +265,20 @@ depends-member:
 - !private ["PSs11CVarArgType", "UIAlertController"]
 - !private ["PSs11CVarArgType", "UIBarButtonItem"]
 - !private ["PSs11CVarArgType", "UIColor"]
+- !private ["PSs11CVarArgType", "UIFont"]
 - !private ["PSs11CVarArgType", "UITextFieldTextDidChangeNotification"]
 - !private ["PSs11CVarArgType", "accessoryType"]
 - !private ["PSs11CVarArgType", "action"]
 - !private ["PSs11CVarArgType", "addAction"]
+- !private ["PSs11CVarArgType", "addAttribute"]
 - ["PSs11CVarArgType", "addItemFromMessage"]
 - !private ["PSs11CVarArgType", "addObserverForName"]
 - !private ["PSs11CVarArgType", "addTextFieldWithConfigurationHandler"]
+- !private ["PSs11CVarArgType", "attributedText"]
 - ["PSs11CVarArgType", "chanellDidReceivedNotificationMessage"]
 - ["PSs11CVarArgType", "channel"]
 - ["PSs11CVarArgType", "channel.storage"]
+- !private ["PSs11CVarArgType", "characters"]
 - !private ["PSs11CVarArgType", "defaultCenter"]
 - ["PSs11CVarArgType", "deleteItemFromMessage"]
 - ["PSs11CVarArgType", "deleteRowAtIndex"]
@@ -266,9 +294,11 @@ depends-member:
 - ["PSs11CVarArgType", "findArrayIndexOfTodoItem"]
 - ["PSs11CVarArgType", "findArrayIndexOfTodoObjectWithId"]
 - ["PSs11CVarArgType", "findTodoObjectWithIdInArray"]
+- !private ["PSs11CVarArgType", "font"]
 - !private ["PSs11CVarArgType", "fromDictionary"]
 - ["PSs11CVarArgType", "getObjectIdFromMessage"]
 - !private ["PSs11CVarArgType", "giveMeDataObjectsWithCompletion"]
+- ["PSs11CVarArgType", "giveMeNewSwipeCell"]
 - !private ["PSs11CVarArgType", "indexPathForCell"]
 - ["PSs11CVarArgType", "init"]
 - ["PSs11CVarArgType", "insertRowAtIndex"]
@@ -285,6 +315,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "localized"]
 - !private ["PSs11CVarArgType", "mainQueue"]
 - !private ["PSs11CVarArgType", "navigationItem"]
+- !private ["PSs11CVarArgType", "numberOfLines"]
 - ["PSs11CVarArgType", "numberOfSectionsInTableView"]
 - !private ["PSs11CVarArgType", "objectId"]
 - !private ["PSs11CVarArgType", "other_permissions"]
@@ -299,6 +330,7 @@ depends-member:
 - ["PSs11CVarArgType", "reloadRowAtIndex"]
 - !private ["PSs11CVarArgType", "reloadRowsAtIndexPaths"]
 - ["PSs11CVarArgType", "reloadTableView"]
+- !private ["PSs11CVarArgType", "removeAttribute"]
 - ["PSs11CVarArgType", "reverseTodoItemCompletedStateAtSyncano"]
 - !private ["PSs11CVarArgType", "rightBarButtonItem"]
 - !private ["PSs11CVarArgType", "rightButtons"]
@@ -328,6 +360,7 @@ depends-member:
 - ["PSs11CVarArgType", "stopLoadingAnimation"]
 - !private ["PSs11CVarArgType", "subscribeToChannel"]
 - ["PSs11CVarArgType", "syncano"]
+- !private ["PSs11CVarArgType", "systemFontOfSize"]
 - ["PSs11CVarArgType", "tableView"]
 - !private ["PSs11CVarArgType", "text"]
 - !private ["PSs11CVarArgType", "textFields"]
@@ -338,6 +371,10 @@ depends-member:
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "viewForZoomingInScrollView"]
 - ["PSs11CVarArgType", ""]
+- !private ["VSS13CharacterView", "Generator"]
+- !private ["VSS13CharacterView", "Index"]
+- !private ["VSS13CharacterView", "SubSequence"]
+- !private ["VSS13CharacterView", "count"]
 - !private ["PSs14CollectionType", "Element"]
 - !private ["PSs14CollectionType", "Generator"]
 - !private ["PSs14CollectionType", "Index"]
@@ -356,6 +393,7 @@ depends-member:
 - !private ["PSs10Comparable", "IntegerLiteralType"]
 - !private ["PSs10Comparable", "Stride"]
 - !private ["PSs10Comparable", "_DisabledRangeIndex"]
+- !private ["PSs10Comparable", "characters"]
 - !private ["PSs10Comparable", "localized"]
 - !private ["PSs28CustomDebugStringConvertible", "Element"]
 - !private ["PSs28CustomDebugStringConvertible", "Generator"]
@@ -364,6 +402,7 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
 - !private ["PSs28CustomDebugStringConvertible", "_Buffer"]
 - !private ["PSs28CustomDebugStringConvertible", "_Element"]
+- !private ["PSs28CustomDebugStringConvertible", "characters"]
 - !private ["PSs28CustomDebugStringConvertible", "count"]
 - !private ["PSs28CustomDebugStringConvertible", "filter"]
 - !private ["PSs28CustomDebugStringConvertible", "first"]
@@ -381,8 +420,11 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "MGSwipeButton"]
 - !private ["PSs23CustomStringConvertible", "MGSwipeTableCell"]
 - !private ["PSs23CustomStringConvertible", "NSIndexPath"]
+- !private ["PSs23CustomStringConvertible", "NSMakeRange"]
+- !private ["PSs23CustomStringConvertible", "NSMutableAttributedString"]
 - !private ["PSs23CustomStringConvertible", "NSNotificationCenter"]
 - !private ["PSs23CustomStringConvertible", "NSOperationQueue"]
+- !private ["PSs23CustomStringConvertible", "NSStrikethroughStyleAttributeName"]
 - !private ["PSs23CustomStringConvertible", "SCChannel"]
 - !private ["PSs23CustomStringConvertible", "Stride"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
@@ -392,6 +434,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "UIAlertController"]
 - !private ["PSs23CustomStringConvertible", "UIBarButtonItem"]
 - !private ["PSs23CustomStringConvertible", "UIColor"]
+- !private ["PSs23CustomStringConvertible", "UIFont"]
 - !private ["PSs23CustomStringConvertible", "UITextFieldTextDidChangeNotification"]
 - !private ["PSs23CustomStringConvertible", "_Buffer"]
 - !private ["PSs23CustomStringConvertible", "_Element"]
@@ -399,12 +442,15 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "accessoryType"]
 - !private ["PSs23CustomStringConvertible", "action"]
 - !private ["PSs23CustomStringConvertible", "addAction"]
+- !private ["PSs23CustomStringConvertible", "addAttribute"]
 - ["PSs23CustomStringConvertible", "addItemFromMessage"]
 - !private ["PSs23CustomStringConvertible", "addObserverForName"]
 - !private ["PSs23CustomStringConvertible", "addTextFieldWithConfigurationHandler"]
+- !private ["PSs23CustomStringConvertible", "attributedText"]
 - ["PSs23CustomStringConvertible", "chanellDidReceivedNotificationMessage"]
 - ["PSs23CustomStringConvertible", "channel"]
 - ["PSs23CustomStringConvertible", "channel.storage"]
+- !private ["PSs23CustomStringConvertible", "characters"]
 - !private ["PSs23CustomStringConvertible", "count"]
 - !private ["PSs23CustomStringConvertible", "defaultCenter"]
 - ["PSs23CustomStringConvertible", "deleteItemFromMessage"]
@@ -423,9 +469,11 @@ depends-member:
 - ["PSs23CustomStringConvertible", "findArrayIndexOfTodoObjectWithId"]
 - ["PSs23CustomStringConvertible", "findTodoObjectWithIdInArray"]
 - !private ["PSs23CustomStringConvertible", "first"]
+- !private ["PSs23CustomStringConvertible", "font"]
 - !private ["PSs23CustomStringConvertible", "fromDictionary"]
 - ["PSs23CustomStringConvertible", "getObjectIdFromMessage"]
 - !private ["PSs23CustomStringConvertible", "giveMeDataObjectsWithCompletion"]
+- ["PSs23CustomStringConvertible", "giveMeNewSwipeCell"]
 - !private ["PSs23CustomStringConvertible", "indexOf"]
 - !private ["PSs23CustomStringConvertible", "indexPathForCell"]
 - ["PSs23CustomStringConvertible", "init"]
@@ -443,6 +491,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "localized"]
 - !private ["PSs23CustomStringConvertible", "mainQueue"]
 - !private ["PSs23CustomStringConvertible", "navigationItem"]
+- !private ["PSs23CustomStringConvertible", "numberOfLines"]
 - ["PSs23CustomStringConvertible", "numberOfSectionsInTableView"]
 - !private ["PSs23CustomStringConvertible", "objectId"]
 - !private ["PSs23CustomStringConvertible", "other_permissions"]
@@ -459,6 +508,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "reloadTableView"]
 - !private ["PSs23CustomStringConvertible", "removeAll"]
 - !private ["PSs23CustomStringConvertible", "removeAtIndex"]
+- !private ["PSs23CustomStringConvertible", "removeAttribute"]
 - ["PSs23CustomStringConvertible", "reverseTodoItemCompletedStateAtSyncano"]
 - !private ["PSs23CustomStringConvertible", "rightBarButtonItem"]
 - !private ["PSs23CustomStringConvertible", "rightButtons"]
@@ -489,6 +539,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "subscribeToChannel"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
 - ["PSs23CustomStringConvertible", "syncano"]
+- !private ["PSs23CustomStringConvertible", "systemFontOfSize"]
 - ["PSs23CustomStringConvertible", "tableView"]
 - !private ["PSs23CustomStringConvertible", "text"]
 - !private ["PSs23CustomStringConvertible", "textFields"]
@@ -527,8 +578,11 @@ depends-member:
 - !private ["PSs9Equatable", "MGSwipeButton"]
 - !private ["PSs9Equatable", "MGSwipeTableCell"]
 - !private ["PSs9Equatable", "NSIndexPath"]
+- !private ["PSs9Equatable", "NSMakeRange"]
+- !private ["PSs9Equatable", "NSMutableAttributedString"]
 - !private ["PSs9Equatable", "NSNotificationCenter"]
 - !private ["PSs9Equatable", "NSOperationQueue"]
+- !private ["PSs9Equatable", "NSStrikethroughStyleAttributeName"]
 - !private ["PSs9Equatable", "None"]
 - !private ["PSs9Equatable", "Refresh"]
 - !private ["PSs9Equatable", "SCChannel"]
@@ -539,6 +593,7 @@ depends-member:
 - !private ["PSs9Equatable", "UIAlertController"]
 - !private ["PSs9Equatable", "UIBarButtonItem"]
 - !private ["PSs9Equatable", "UIColor"]
+- !private ["PSs9Equatable", "UIFont"]
 - !private ["PSs9Equatable", "UITextFieldTextDidChangeNotification"]
 - ["PSs9Equatable", "Update"]
 - !private ["PSs9Equatable", "_DisabledRangeIndex"]
@@ -546,12 +601,15 @@ depends-member:
 - !private ["PSs9Equatable", "accessoryType"]
 - !private ["PSs9Equatable", "action"]
 - !private ["PSs9Equatable", "addAction"]
+- !private ["PSs9Equatable", "addAttribute"]
 - ["PSs9Equatable", "addItemFromMessage"]
 - !private ["PSs9Equatable", "addObserverForName"]
 - !private ["PSs9Equatable", "addTextFieldWithConfigurationHandler"]
+- !private ["PSs9Equatable", "attributedText"]
 - ["PSs9Equatable", "chanellDidReceivedNotificationMessage"]
 - ["PSs9Equatable", "channel"]
 - ["PSs9Equatable", "channel.storage"]
+- !private ["PSs9Equatable", "characters"]
 - !private ["PSs9Equatable", "defaultCenter"]
 - ["PSs9Equatable", "deleteItemFromMessage"]
 - ["PSs9Equatable", "deleteRowAtIndex"]
@@ -567,9 +625,11 @@ depends-member:
 - ["PSs9Equatable", "findArrayIndexOfTodoItem"]
 - ["PSs9Equatable", "findArrayIndexOfTodoObjectWithId"]
 - ["PSs9Equatable", "findTodoObjectWithIdInArray"]
+- !private ["PSs9Equatable", "font"]
 - !private ["PSs9Equatable", "fromDictionary"]
 - ["PSs9Equatable", "getObjectIdFromMessage"]
 - !private ["PSs9Equatable", "giveMeDataObjectsWithCompletion"]
+- ["PSs9Equatable", "giveMeNewSwipeCell"]
 - !private ["PSs9Equatable", "indexPathForCell"]
 - ["PSs9Equatable", "init"]
 - ["PSs9Equatable", "insertRowAtIndex"]
@@ -586,6 +646,7 @@ depends-member:
 - !private ["PSs9Equatable", "localized"]
 - !private ["PSs9Equatable", "mainQueue"]
 - !private ["PSs9Equatable", "navigationItem"]
+- !private ["PSs9Equatable", "numberOfLines"]
 - ["PSs9Equatable", "numberOfSectionsInTableView"]
 - !private ["PSs9Equatable", "objectId"]
 - !private ["PSs9Equatable", "other_permissions"]
@@ -600,6 +661,7 @@ depends-member:
 - ["PSs9Equatable", "reloadRowAtIndex"]
 - !private ["PSs9Equatable", "reloadRowsAtIndexPaths"]
 - ["PSs9Equatable", "reloadTableView"]
+- !private ["PSs9Equatable", "removeAttribute"]
 - ["PSs9Equatable", "reverseTodoItemCompletedStateAtSyncano"]
 - !private ["PSs9Equatable", "rightBarButtonItem"]
 - !private ["PSs9Equatable", "rightButtons"]
@@ -629,6 +691,7 @@ depends-member:
 - ["PSs9Equatable", "stopLoadingAnimation"]
 - !private ["PSs9Equatable", "subscribeToChannel"]
 - ["PSs9Equatable", "syncano"]
+- !private ["PSs9Equatable", "systemFontOfSize"]
 - ["PSs9Equatable", "tableView"]
 - !private ["PSs9Equatable", "text"]
 - !private ["PSs9Equatable", "textFields"]
@@ -639,6 +702,7 @@ depends-member:
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
 - ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "characters"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "localized"]
 - !private ["PSs16ForwardIndexType", "Distance"]
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
@@ -660,8 +724,11 @@ depends-member:
 - !private ["PSs8Hashable", "MGSwipeButton"]
 - !private ["PSs8Hashable", "MGSwipeTableCell"]
 - !private ["PSs8Hashable", "NSIndexPath"]
+- !private ["PSs8Hashable", "NSMakeRange"]
+- !private ["PSs8Hashable", "NSMutableAttributedString"]
 - !private ["PSs8Hashable", "NSNotificationCenter"]
 - !private ["PSs8Hashable", "NSOperationQueue"]
+- !private ["PSs8Hashable", "NSStrikethroughStyleAttributeName"]
 - !private ["PSs8Hashable", "None"]
 - !private ["PSs8Hashable", "Refresh"]
 - !private ["PSs8Hashable", "SCChannel"]
@@ -672,18 +739,22 @@ depends-member:
 - !private ["PSs8Hashable", "UIAlertController"]
 - !private ["PSs8Hashable", "UIBarButtonItem"]
 - !private ["PSs8Hashable", "UIColor"]
+- !private ["PSs8Hashable", "UIFont"]
 - !private ["PSs8Hashable", "UITextFieldTextDidChangeNotification"]
 - ["PSs8Hashable", "Update"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - !private ["PSs8Hashable", "accessoryType"]
 - !private ["PSs8Hashable", "action"]
 - !private ["PSs8Hashable", "addAction"]
+- !private ["PSs8Hashable", "addAttribute"]
 - ["PSs8Hashable", "addItemFromMessage"]
 - !private ["PSs8Hashable", "addObserverForName"]
 - !private ["PSs8Hashable", "addTextFieldWithConfigurationHandler"]
+- !private ["PSs8Hashable", "attributedText"]
 - ["PSs8Hashable", "chanellDidReceivedNotificationMessage"]
 - ["PSs8Hashable", "channel"]
 - ["PSs8Hashable", "channel.storage"]
+- !private ["PSs8Hashable", "characters"]
 - !private ["PSs8Hashable", "defaultCenter"]
 - ["PSs8Hashable", "deleteItemFromMessage"]
 - ["PSs8Hashable", "deleteRowAtIndex"]
@@ -699,9 +770,11 @@ depends-member:
 - ["PSs8Hashable", "findArrayIndexOfTodoItem"]
 - ["PSs8Hashable", "findArrayIndexOfTodoObjectWithId"]
 - ["PSs8Hashable", "findTodoObjectWithIdInArray"]
+- !private ["PSs8Hashable", "font"]
 - !private ["PSs8Hashable", "fromDictionary"]
 - ["PSs8Hashable", "getObjectIdFromMessage"]
 - !private ["PSs8Hashable", "giveMeDataObjectsWithCompletion"]
+- ["PSs8Hashable", "giveMeNewSwipeCell"]
 - !private ["PSs8Hashable", "indexPathForCell"]
 - ["PSs8Hashable", "init"]
 - ["PSs8Hashable", "insertRowAtIndex"]
@@ -718,6 +791,7 @@ depends-member:
 - !private ["PSs8Hashable", "localized"]
 - !private ["PSs8Hashable", "mainQueue"]
 - !private ["PSs8Hashable", "navigationItem"]
+- !private ["PSs8Hashable", "numberOfLines"]
 - ["PSs8Hashable", "numberOfSectionsInTableView"]
 - !private ["PSs8Hashable", "objectId"]
 - !private ["PSs8Hashable", "other_permissions"]
@@ -732,6 +806,7 @@ depends-member:
 - ["PSs8Hashable", "reloadRowAtIndex"]
 - !private ["PSs8Hashable", "reloadRowsAtIndexPaths"]
 - ["PSs8Hashable", "reloadTableView"]
+- !private ["PSs8Hashable", "removeAttribute"]
 - ["PSs8Hashable", "reverseTodoItemCompletedStateAtSyncano"]
 - !private ["PSs8Hashable", "rightBarButtonItem"]
 - !private ["PSs8Hashable", "rightButtons"]
@@ -761,6 +836,7 @@ depends-member:
 - ["PSs8Hashable", "stopLoadingAnimation"]
 - !private ["PSs8Hashable", "subscribeToChannel"]
 - ["PSs8Hashable", "syncano"]
+- !private ["PSs8Hashable", "systemFontOfSize"]
 - ["PSs8Hashable", "tableView"]
 - !private ["PSs8Hashable", "text"]
 - !private ["PSs8Hashable", "textFields"]
@@ -772,6 +848,7 @@ depends-member:
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
 - ["PSs8Hashable", ""]
 - !private ["SQ", "deinit"]
+- !private ["VVSS13CharacterView5Index", "Distance"]
 - !private ["PSs9Indexable", "Element"]
 - !private ["PSs9Indexable", "Generator"]
 - !private ["PSs9Indexable", "Index"]
@@ -839,6 +916,7 @@ depends-member:
 - !private ["PSs14MirrorPathType", "Distance"]
 - !private ["PSs14MirrorPathType", "IntegerLiteralType"]
 - !private ["PSs14MirrorPathType", "Stride"]
+- !private ["PSs14MirrorPathType", "characters"]
 - !private ["PSs14MirrorPathType", "localized"]
 - !private ["PSs21MutableCollectionType", "Element"]
 - !private ["PSs21MutableCollectionType", "Generator"]
@@ -882,11 +960,17 @@ depends-member:
 - !private ["PSs16MutableSliceable", "removeAll"]
 - !private ["PSs16MutableSliceable", "removeAtIndex"]
 - !private ["PSs16MutableSliceable", "subscript"]
+- !private ["CSo18NSAttributedString", "addAttribute"]
+- !private ["CSo18NSAttributedString", "init"]
+- !private ["CSo18NSAttributedString", "removeAttribute"]
 - !private ["PSo8NSCoding", "MGSwipeButton"]
 - !private ["PSo8NSCoding", "MGSwipeTableCell"]
 - !private ["PSo8NSCoding", "NSIndexPath"]
+- !private ["PSo8NSCoding", "NSMakeRange"]
+- !private ["PSo8NSCoding", "NSMutableAttributedString"]
 - !private ["PSo8NSCoding", "NSNotificationCenter"]
 - !private ["PSo8NSCoding", "NSOperationQueue"]
+- !private ["PSo8NSCoding", "NSStrikethroughStyleAttributeName"]
 - !private ["PSo8NSCoding", "SCChannel"]
 - ["PSo8NSCoding", "Syncano"]
 - ["PSo8NSCoding", "Todo"]
@@ -894,14 +978,18 @@ depends-member:
 - !private ["PSo8NSCoding", "UIAlertController"]
 - !private ["PSo8NSCoding", "UIBarButtonItem"]
 - !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UITextFieldTextDidChangeNotification"]
 - !private ["PSo8NSCoding", "accessoryType"]
 - !private ["PSo8NSCoding", "addAction"]
+- !private ["PSo8NSCoding", "addAttribute"]
 - ["PSo8NSCoding", "addItemFromMessage"]
 - !private ["PSo8NSCoding", "addTextFieldWithConfigurationHandler"]
+- !private ["PSo8NSCoding", "attributedText"]
 - ["PSo8NSCoding", "chanellDidReceivedNotificationMessage"]
 - ["PSo8NSCoding", "channel"]
 - ["PSo8NSCoding", "channel.storage"]
+- !private ["PSo8NSCoding", "characters"]
 - ["PSo8NSCoding", "deleteItemFromMessage"]
 - ["PSo8NSCoding", "deleteRowAtIndex"]
 - !private ["PSo8NSCoding", "deleteRowsAtIndexPaths"]
@@ -915,8 +1003,10 @@ depends-member:
 - ["PSo8NSCoding", "findArrayIndexOfTodoItem"]
 - ["PSo8NSCoding", "findArrayIndexOfTodoObjectWithId"]
 - ["PSo8NSCoding", "findTodoObjectWithIdInArray"]
+- !private ["PSo8NSCoding", "font"]
 - !private ["PSo8NSCoding", "fromDictionary"]
 - ["PSo8NSCoding", "getObjectIdFromMessage"]
+- ["PSo8NSCoding", "giveMeNewSwipeCell"]
 - !private ["PSo8NSCoding", "indexPathForCell"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "insertRowAtIndex"]
@@ -932,6 +1022,7 @@ depends-member:
 - !private ["PSo8NSCoding", "lightGrayColor"]
 - !private ["PSo8NSCoding", "localized"]
 - !private ["PSo8NSCoding", "navigationItem"]
+- !private ["PSo8NSCoding", "numberOfLines"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - !private ["PSo8NSCoding", "objectId"]
 - !private ["PSo8NSCoding", "other_permissions"]
@@ -945,6 +1036,7 @@ depends-member:
 - ["PSo8NSCoding", "reloadRowAtIndex"]
 - !private ["PSo8NSCoding", "reloadRowsAtIndexPaths"]
 - ["PSo8NSCoding", "reloadTableView"]
+- !private ["PSo8NSCoding", "removeAttribute"]
 - ["PSo8NSCoding", "reverseTodoItemCompletedStateAtSyncano"]
 - !private ["PSo8NSCoding", "rightBarButtonItem"]
 - !private ["PSo8NSCoding", "rightButtons"]
@@ -982,7 +1074,9 @@ depends-member:
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "addAttribute"]
 - !private ["PSo9NSCopying", "channel"]
+- !private ["PSo9NSCopying", "characters"]
 - !private ["PSo9NSCopying", "deleteWithCompletion"]
 - !private ["PSo9NSCopying", "enabled"]
 - !private ["PSo9NSCopying", "fromDictionary"]
@@ -994,14 +1088,19 @@ depends-member:
 - !private ["PSo9NSCopying", "other_permissions"]
 - !private ["PSo9NSCopying", "please"]
 - !private ["PSo9NSCopying", "redColor"]
+- !private ["PSo9NSCopying", "removeAttribute"]
 - !private ["PSo9NSCopying", "row"]
 - !private ["PSo9NSCopying", "saveWithCompletionBlock"]
+- !private ["PSo9NSCopying", "systemFontOfSize"]
 - !private ["PSo9NSCopying", "title"]
 - !private ["PSo26NSExtensionRequestHandling", "MGSwipeButton"]
 - !private ["PSo26NSExtensionRequestHandling", "MGSwipeTableCell"]
 - !private ["PSo26NSExtensionRequestHandling", "NSIndexPath"]
+- !private ["PSo26NSExtensionRequestHandling", "NSMakeRange"]
+- !private ["PSo26NSExtensionRequestHandling", "NSMutableAttributedString"]
 - !private ["PSo26NSExtensionRequestHandling", "NSNotificationCenter"]
 - !private ["PSo26NSExtensionRequestHandling", "NSOperationQueue"]
+- !private ["PSo26NSExtensionRequestHandling", "NSStrikethroughStyleAttributeName"]
 - !private ["PSo26NSExtensionRequestHandling", "SCChannel"]
 - ["PSo26NSExtensionRequestHandling", "Syncano"]
 - ["PSo26NSExtensionRequestHandling", "Todo"]
@@ -1009,6 +1108,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIBarButtonItem"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
+- !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - !private ["PSo26NSExtensionRequestHandling", "UITextFieldTextDidChangeNotification"]
 - !private ["PSo26NSExtensionRequestHandling", "addAction"]
 - ["PSo26NSExtensionRequestHandling", "addItemFromMessage"]
@@ -1027,6 +1127,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "findArrayIndexOfTodoObjectWithId"]
 - ["PSo26NSExtensionRequestHandling", "findTodoObjectWithIdInArray"]
 - ["PSo26NSExtensionRequestHandling", "getObjectIdFromMessage"]
+- ["PSo26NSExtensionRequestHandling", "giveMeNewSwipeCell"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "insertRowAtIndex"]
 - !private ["PSo26NSExtensionRequestHandling", "kAPIisCompletedKey"]
@@ -1071,17 +1172,28 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo11NSIndexPath", "init"]
 - !private ["CSo11NSIndexPath", "row"]
+- !private ["CSo25NSMutableAttributedString", "addAttribute"]
+- !private ["CSo25NSMutableAttributedString", "init"]
+- !private ["CSo25NSMutableAttributedString", "removeAttribute"]
+- !private ["PSo16NSMutableCopying", "addAttribute"]
+- !private ["PSo16NSMutableCopying", "characters"]
+- !private ["PSo16NSMutableCopying", "init"]
 - !private ["PSo16NSMutableCopying", "localized"]
+- !private ["PSo16NSMutableCopying", "removeAttribute"]
 - !private ["CSo20NSNotificationCenter", "addObserverForName"]
 - !private ["CSo20NSNotificationCenter", "defaultCenter"]
 - !private ["CSo8NSNumber", "deinit"]
 - !private ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "MGSwipeButton"]
-- !private ["CSo8NSObject", "MGSwipeTableCell"]
+- ["CSo8NSObject", "MGSwipeTableCell"]
 - ["CSo8NSObject", "NSIndexPath"]
+- !private ["CSo8NSObject", "NSMakeRange"]
+- !private ["CSo8NSObject", "NSMutableAttributedString"]
 - !private ["CSo8NSObject", "NSNotificationCenter"]
 - !private ["CSo8NSObject", "NSOperationQueue"]
+- !private ["CSo8NSObject", "NSStrikethroughStyleAttributeName"]
 - ["CSo8NSObject", "SCChannel"]
 - ["CSo8NSObject", "SCChannelNotificationMessage"]
 - ["CSo8NSObject", "String"]
@@ -1091,18 +1203,22 @@ depends-member:
 - !private ["CSo8NSObject", "UIAlertController"]
 - !private ["CSo8NSObject", "UIBarButtonItem"]
 - !private ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UIFont"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
 - !private ["CSo8NSObject", "UITextFieldTextDidChangeNotification"]
 - !private ["CSo8NSObject", "accessoryType"]
 - !private ["CSo8NSObject", "action"]
 - !private ["CSo8NSObject", "addAction"]
+- !private ["CSo8NSObject", "addAttribute"]
 - ["CSo8NSObject", "addItemFromMessage"]
 - !private ["CSo8NSObject", "addObserverForName"]
 - !private ["CSo8NSObject", "addTextFieldWithConfigurationHandler"]
+- !private ["CSo8NSObject", "attributedText"]
 - ["CSo8NSObject", "chanellDidReceivedNotificationMessage"]
 - ["CSo8NSObject", "channel"]
 - ["CSo8NSObject", "channel.storage"]
+- !private ["CSo8NSObject", "characters"]
 - !private ["CSo8NSObject", "defaultCenter"]
 - !private ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "deleteItemFromMessage"]
@@ -1119,9 +1235,11 @@ depends-member:
 - ["CSo8NSObject", "findArrayIndexOfTodoItem"]
 - ["CSo8NSObject", "findArrayIndexOfTodoObjectWithId"]
 - ["CSo8NSObject", "findTodoObjectWithIdInArray"]
+- !private ["CSo8NSObject", "font"]
 - !private ["CSo8NSObject", "fromDictionary"]
 - ["CSo8NSObject", "getObjectIdFromMessage"]
 - !private ["CSo8NSObject", "giveMeDataObjectsWithCompletion"]
+- ["CSo8NSObject", "giveMeNewSwipeCell"]
 - !private ["CSo8NSObject", "indexPathForCell"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "insertRowAtIndex"]
@@ -1138,6 +1256,7 @@ depends-member:
 - !private ["CSo8NSObject", "localized"]
 - !private ["CSo8NSObject", "mainQueue"]
 - !private ["CSo8NSObject", "navigationItem"]
+- !private ["CSo8NSObject", "numberOfLines"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
 - !private ["CSo8NSObject", "objectId"]
 - !private ["CSo8NSObject", "other_permissions"]
@@ -1152,6 +1271,7 @@ depends-member:
 - ["CSo8NSObject", "reloadRowAtIndex"]
 - !private ["CSo8NSObject", "reloadRowsAtIndexPaths"]
 - ["CSo8NSObject", "reloadTableView"]
+- !private ["CSo8NSObject", "removeAttribute"]
 - ["CSo8NSObject", "reverseTodoItemCompletedStateAtSyncano"]
 - !private ["CSo8NSObject", "rightBarButtonItem"]
 - !private ["CSo8NSObject", "rightButtons"]
@@ -1181,6 +1301,7 @@ depends-member:
 - ["CSo8NSObject", "stopLoadingAnimation"]
 - !private ["CSo8NSObject", "subscribeToChannel"]
 - ["CSo8NSObject", "syncano"]
+- !private ["CSo8NSObject", "systemFontOfSize"]
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textFields"]
@@ -1193,8 +1314,11 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "MGSwipeButton"]
 - !private ["PSo16NSObjectProtocol", "MGSwipeTableCell"]
 - !private ["PSo16NSObjectProtocol", "NSIndexPath"]
+- !private ["PSo16NSObjectProtocol", "NSMakeRange"]
+- !private ["PSo16NSObjectProtocol", "NSMutableAttributedString"]
 - !private ["PSo16NSObjectProtocol", "NSNotificationCenter"]
 - !private ["PSo16NSObjectProtocol", "NSOperationQueue"]
+- !private ["PSo16NSObjectProtocol", "NSStrikethroughStyleAttributeName"]
 - !private ["PSo16NSObjectProtocol", "SCChannel"]
 - ["PSo16NSObjectProtocol", "Syncano"]
 - ["PSo16NSObjectProtocol", "Todo"]
@@ -1202,16 +1326,20 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIAlertController"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UITextFieldTextDidChangeNotification"]
 - !private ["PSo16NSObjectProtocol", "accessoryType"]
 - !private ["PSo16NSObjectProtocol", "action"]
 - !private ["PSo16NSObjectProtocol", "addAction"]
+- !private ["PSo16NSObjectProtocol", "addAttribute"]
 - ["PSo16NSObjectProtocol", "addItemFromMessage"]
 - !private ["PSo16NSObjectProtocol", "addObserverForName"]
 - !private ["PSo16NSObjectProtocol", "addTextFieldWithConfigurationHandler"]
+- !private ["PSo16NSObjectProtocol", "attributedText"]
 - ["PSo16NSObjectProtocol", "chanellDidReceivedNotificationMessage"]
 - ["PSo16NSObjectProtocol", "channel"]
 - ["PSo16NSObjectProtocol", "channel.storage"]
+- !private ["PSo16NSObjectProtocol", "characters"]
 - !private ["PSo16NSObjectProtocol", "defaultCenter"]
 - ["PSo16NSObjectProtocol", "deleteItemFromMessage"]
 - ["PSo16NSObjectProtocol", "deleteRowAtIndex"]
@@ -1227,9 +1355,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "findArrayIndexOfTodoItem"]
 - ["PSo16NSObjectProtocol", "findArrayIndexOfTodoObjectWithId"]
 - ["PSo16NSObjectProtocol", "findTodoObjectWithIdInArray"]
+- !private ["PSo16NSObjectProtocol", "font"]
 - !private ["PSo16NSObjectProtocol", "fromDictionary"]
 - ["PSo16NSObjectProtocol", "getObjectIdFromMessage"]
 - !private ["PSo16NSObjectProtocol", "giveMeDataObjectsWithCompletion"]
+- ["PSo16NSObjectProtocol", "giveMeNewSwipeCell"]
 - !private ["PSo16NSObjectProtocol", "indexPathForCell"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "insertRowAtIndex"]
@@ -1246,6 +1376,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "localized"]
 - !private ["PSo16NSObjectProtocol", "mainQueue"]
 - !private ["PSo16NSObjectProtocol", "navigationItem"]
+- !private ["PSo16NSObjectProtocol", "numberOfLines"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
 - !private ["PSo16NSObjectProtocol", "objectId"]
 - !private ["PSo16NSObjectProtocol", "other_permissions"]
@@ -1260,6 +1391,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "reloadRowAtIndex"]
 - !private ["PSo16NSObjectProtocol", "reloadRowsAtIndexPaths"]
 - ["PSo16NSObjectProtocol", "reloadTableView"]
+- !private ["PSo16NSObjectProtocol", "removeAttribute"]
 - ["PSo16NSObjectProtocol", "reverseTodoItemCompletedStateAtSyncano"]
 - !private ["PSo16NSObjectProtocol", "rightBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "rightButtons"]
@@ -1289,6 +1421,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "stopLoadingAnimation"]
 - !private ["PSo16NSObjectProtocol", "subscribeToChannel"]
 - ["PSo16NSObjectProtocol", "syncano"]
+- !private ["PSo16NSObjectProtocol", "systemFontOfSize"]
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "textFields"]
@@ -1300,16 +1433,21 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["CSo16NSOperationQueue", "mainQueue"]
+- !private ["PSo14NSSecureCoding", "addAttribute"]
+- !private ["PSo14NSSecureCoding", "characters"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "lightGrayColor"]
 - !private ["PSo14NSSecureCoding", "localized"]
 - !private ["PSo14NSSecureCoding", "redColor"]
+- !private ["PSo14NSSecureCoding", "removeAttribute"]
 - !private ["PSo14NSSecureCoding", "row"]
+- !private ["CSo8NSString", "characters"]
 - !private ["CSo8NSString", "localized"]
 - !private ["CSo7NSValue", "deinit"]
 - ["PSs21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "characters"]
 - !private ["PSs16OutputStreamType", "localized"]
 - !private ["PSs21RandomAccessIndexType", "Distance"]
 - !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
@@ -1346,8 +1484,11 @@ depends-member:
 - !private ["PSo17SCChannelDelegate", "MGSwipeButton"]
 - !private ["PSo17SCChannelDelegate", "MGSwipeTableCell"]
 - !private ["PSo17SCChannelDelegate", "NSIndexPath"]
+- !private ["PSo17SCChannelDelegate", "NSMakeRange"]
+- !private ["PSo17SCChannelDelegate", "NSMutableAttributedString"]
 - !private ["PSo17SCChannelDelegate", "NSNotificationCenter"]
 - !private ["PSo17SCChannelDelegate", "NSOperationQueue"]
+- !private ["PSo17SCChannelDelegate", "NSStrikethroughStyleAttributeName"]
 - !private ["PSo17SCChannelDelegate", "SCChannel"]
 - ["PSo17SCChannelDelegate", "Syncano"]
 - ["PSo17SCChannelDelegate", "Todo"]
@@ -1355,6 +1496,7 @@ depends-member:
 - !private ["PSo17SCChannelDelegate", "UIAlertController"]
 - !private ["PSo17SCChannelDelegate", "UIBarButtonItem"]
 - !private ["PSo17SCChannelDelegate", "UIColor"]
+- !private ["PSo17SCChannelDelegate", "UIFont"]
 - !private ["PSo17SCChannelDelegate", "UITextFieldTextDidChangeNotification"]
 - !private ["PSo17SCChannelDelegate", "addItemFromMessage"]
 - ["PSo17SCChannelDelegate", "chanellDidReceivedNotificationMessage"]
@@ -1369,6 +1511,7 @@ depends-member:
 - !private ["PSo17SCChannelDelegate", "findArrayIndexOfTodoObjectWithId"]
 - !private ["PSo17SCChannelDelegate", "findTodoObjectWithIdInArray"]
 - !private ["PSo17SCChannelDelegate", "getObjectIdFromMessage"]
+- !private ["PSo17SCChannelDelegate", "giveMeNewSwipeCell"]
 - !private ["PSo17SCChannelDelegate", "insertRowAtIndex"]
 - !private ["PSo17SCChannelDelegate", "kAPIisCompletedKey"]
 - ["PSo17SCChannelDelegate", "kSyncanoApiKey"]
@@ -1447,12 +1590,16 @@ depends-member:
 - !private ["VSs5Slice", "Index"]
 - !private ["VSs5Slice", "SubSequence"]
 - !private ["VSs5Slice", "_Element"]
+- !private ["PSs10Streamable", "characters"]
 - !private ["PSs10Streamable", "localized"]
 - !private ["PSs10Strideable", "Distance"]
 - !private ["PSs10Strideable", "IntegerLiteralType"]
 - !private ["PSs10Strideable", "Stride"]
+- !private ["SS", "characters"]
 - !private ["SS", "localized"]
+- !private ["PSs30StringInterpolationConvertible", "characters"]
 - !private ["PSs30StringInterpolationConvertible", "localized"]
+- !private ["PSs24StringLiteralConvertible", "characters"]
 - !private ["PSs24StringLiteralConvertible", "localized"]
 - ["CSo7Syncano", "sharedInstanceWithApiKey"]
 - !private ["C16todo_app_syncano4Todo", "channel"]
@@ -1466,11 +1613,14 @@ depends-member:
 - !private ["C16todo_app_syncano4Todo", "saveWithCompletionBlock"]
 - !private ["C16todo_app_syncano4Todo", "title"]
 - !private ["PSo29UIAccessibilityIdentification", "accessoryType"]
+- !private ["PSo29UIAccessibilityIdentification", "attributedText"]
 - !private ["PSo29UIAccessibilityIdentification", "deleteRowsAtIndexPaths"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo29UIAccessibilityIdentification", "font"]
 - !private ["PSo29UIAccessibilityIdentification", "indexPathForCell"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "insertRowsAtIndexPaths"]
+- !private ["PSo29UIAccessibilityIdentification", "numberOfLines"]
 - !private ["PSo29UIAccessibilityIdentification", "placeholder"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadRowsAtIndexPaths"]
@@ -1488,11 +1638,14 @@ depends-member:
 - !private ["CSo17UIAlertController", "textFields"]
 - !private ["OSC22UIAlertControllerStyle", "Alert"]
 - !private ["PSo12UIAppearance", "accessoryType"]
+- !private ["PSo12UIAppearance", "attributedText"]
 - !private ["PSo12UIAppearance", "deleteRowsAtIndexPaths"]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo12UIAppearance", "font"]
 - !private ["PSo12UIAppearance", "indexPathForCell"]
 - !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "insertRowsAtIndexPaths"]
+- !private ["PSo12UIAppearance", "numberOfLines"]
 - !private ["PSo12UIAppearance", "placeholder"]
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "reloadRowsAtIndexPaths"]
@@ -1503,8 +1656,11 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "MGSwipeButton"]
 - !private ["PSo21UIAppearanceContainer", "MGSwipeTableCell"]
 - !private ["PSo21UIAppearanceContainer", "NSIndexPath"]
+- !private ["PSo21UIAppearanceContainer", "NSMakeRange"]
+- !private ["PSo21UIAppearanceContainer", "NSMutableAttributedString"]
 - !private ["PSo21UIAppearanceContainer", "NSNotificationCenter"]
 - !private ["PSo21UIAppearanceContainer", "NSOperationQueue"]
+- !private ["PSo21UIAppearanceContainer", "NSStrikethroughStyleAttributeName"]
 - !private ["PSo21UIAppearanceContainer", "SCChannel"]
 - ["PSo21UIAppearanceContainer", "Syncano"]
 - ["PSo21UIAppearanceContainer", "Todo"]
@@ -1512,11 +1668,13 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIAlertController"]
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonItem"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UITextFieldTextDidChangeNotification"]
 - !private ["PSo21UIAppearanceContainer", "accessoryType"]
 - !private ["PSo21UIAppearanceContainer", "addAction"]
 - ["PSo21UIAppearanceContainer", "addItemFromMessage"]
 - !private ["PSo21UIAppearanceContainer", "addTextFieldWithConfigurationHandler"]
+- !private ["PSo21UIAppearanceContainer", "attributedText"]
 - ["PSo21UIAppearanceContainer", "chanellDidReceivedNotificationMessage"]
 - ["PSo21UIAppearanceContainer", "channel"]
 - ["PSo21UIAppearanceContainer", "channel.storage"]
@@ -1532,7 +1690,9 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "findArrayIndexOfTodoItem"]
 - ["PSo21UIAppearanceContainer", "findArrayIndexOfTodoObjectWithId"]
 - ["PSo21UIAppearanceContainer", "findTodoObjectWithIdInArray"]
+- !private ["PSo21UIAppearanceContainer", "font"]
 - ["PSo21UIAppearanceContainer", "getObjectIdFromMessage"]
+- ["PSo21UIAppearanceContainer", "giveMeNewSwipeCell"]
 - !private ["PSo21UIAppearanceContainer", "indexPathForCell"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "insertRowAtIndex"]
@@ -1544,6 +1704,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "kSyncanoMessagePayloadIdKey"]
 - !private ["PSo21UIAppearanceContainer", "kSyncanoMessagePayloadTitleKey"]
 - !private ["PSo21UIAppearanceContainer", "navigationItem"]
+- !private ["PSo21UIAppearanceContainer", "numberOfLines"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
 - !private ["PSo21UIAppearanceContainer", "placeholder"]
 - ["PSo21UIAppearanceContainer", "plusButtonPressed"]
@@ -1594,8 +1755,11 @@ depends-member:
 - !private ["PSo18UIContentContainer", "MGSwipeButton"]
 - !private ["PSo18UIContentContainer", "MGSwipeTableCell"]
 - !private ["PSo18UIContentContainer", "NSIndexPath"]
+- !private ["PSo18UIContentContainer", "NSMakeRange"]
+- !private ["PSo18UIContentContainer", "NSMutableAttributedString"]
 - !private ["PSo18UIContentContainer", "NSNotificationCenter"]
 - !private ["PSo18UIContentContainer", "NSOperationQueue"]
+- !private ["PSo18UIContentContainer", "NSStrikethroughStyleAttributeName"]
 - !private ["PSo18UIContentContainer", "SCChannel"]
 - ["PSo18UIContentContainer", "Syncano"]
 - ["PSo18UIContentContainer", "Todo"]
@@ -1603,6 +1767,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIAlertController"]
 - !private ["PSo18UIContentContainer", "UIBarButtonItem"]
 - !private ["PSo18UIContentContainer", "UIColor"]
+- !private ["PSo18UIContentContainer", "UIFont"]
 - !private ["PSo18UIContentContainer", "UITextFieldTextDidChangeNotification"]
 - !private ["PSo18UIContentContainer", "addAction"]
 - ["PSo18UIContentContainer", "addItemFromMessage"]
@@ -1621,6 +1786,7 @@ depends-member:
 - ["PSo18UIContentContainer", "findArrayIndexOfTodoObjectWithId"]
 - ["PSo18UIContentContainer", "findTodoObjectWithIdInArray"]
 - ["PSo18UIContentContainer", "getObjectIdFromMessage"]
+- ["PSo18UIContentContainer", "giveMeNewSwipeCell"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "insertRowAtIndex"]
 - !private ["PSo18UIContentContainer", "kAPIisCompletedKey"]
@@ -1667,11 +1833,14 @@ depends-member:
 - !private ["CSo9UIControl", "placeholder"]
 - !private ["CSo9UIControl", "text"]
 - !private ["PSo17UICoordinateSpace", "accessoryType"]
+- !private ["PSo17UICoordinateSpace", "attributedText"]
 - !private ["PSo17UICoordinateSpace", "deleteRowsAtIndexPaths"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo17UICoordinateSpace", "font"]
 - !private ["PSo17UICoordinateSpace", "indexPathForCell"]
 - !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "insertRowsAtIndexPaths"]
+- !private ["PSo17UICoordinateSpace", "numberOfLines"]
 - !private ["PSo17UICoordinateSpace", "placeholder"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "reloadRowsAtIndexPaths"]
@@ -1680,11 +1849,14 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textLabel"]
 - !private ["PSo13UIDynamicItem", "accessoryType"]
+- !private ["PSo13UIDynamicItem", "attributedText"]
 - !private ["PSo13UIDynamicItem", "deleteRowsAtIndexPaths"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo13UIDynamicItem", "font"]
 - !private ["PSo13UIDynamicItem", "indexPathForCell"]
 - !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "insertRowsAtIndexPaths"]
+- !private ["PSo13UIDynamicItem", "numberOfLines"]
 - !private ["PSo13UIDynamicItem", "placeholder"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "reloadRowsAtIndexPaths"]
@@ -1692,6 +1864,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "selectionStyle"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textLabel"]
+- !private ["CSo6UIFont", "systemFontOfSize"]
 - !private ["PSo27UIGestureRecognizerDelegate", "accessoryType"]
 - !private ["PSo27UIGestureRecognizerDelegate", "init"]
 - !private ["PSo27UIGestureRecognizerDelegate", "rightButtons"]
@@ -1699,18 +1872,25 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "textLabel"]
 - !private ["PSo10UIKeyInput", "placeholder"]
 - !private ["PSo10UIKeyInput", "text"]
+- !private ["CSo7UILabel", "attributedText"]
+- !private ["CSo7UILabel", "font"]
+- !private ["CSo7UILabel", "numberOfLines"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo16UINavigationItem", "leftBarButtonItem"]
 - !private ["CSo16UINavigationItem", "rightBarButtonItem"]
 - !private ["CSo16UINavigationItem", "startAnimatingAt"]
 - !private ["CSo16UINavigationItem", "stopAnimating"]
 - !private ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "MGSwipeButton"]
-- !private ["CSo11UIResponder", "MGSwipeTableCell"]
+- ["CSo11UIResponder", "MGSwipeTableCell"]
 - ["CSo11UIResponder", "NSIndexPath"]
+- !private ["CSo11UIResponder", "NSMakeRange"]
+- !private ["CSo11UIResponder", "NSMutableAttributedString"]
 - !private ["CSo11UIResponder", "NSNotificationCenter"]
 - !private ["CSo11UIResponder", "NSOperationQueue"]
+- !private ["CSo11UIResponder", "NSStrikethroughStyleAttributeName"]
 - ["CSo11UIResponder", "SCChannel"]
 - ["CSo11UIResponder", "SCChannelNotificationMessage"]
 - ["CSo11UIResponder", "String"]
@@ -1720,6 +1900,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIAlertController"]
 - !private ["CSo11UIResponder", "UIBarButtonItem"]
 - !private ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "UIFont"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
 - !private ["CSo11UIResponder", "UITextFieldTextDidChangeNotification"]
@@ -1727,6 +1908,7 @@ depends-member:
 - !private ["CSo11UIResponder", "addAction"]
 - ["CSo11UIResponder", "addItemFromMessage"]
 - !private ["CSo11UIResponder", "addTextFieldWithConfigurationHandler"]
+- !private ["CSo11UIResponder", "attributedText"]
 - ["CSo11UIResponder", "chanellDidReceivedNotificationMessage"]
 - ["CSo11UIResponder", "channel"]
 - ["CSo11UIResponder", "channel.storage"]
@@ -1742,7 +1924,9 @@ depends-member:
 - ["CSo11UIResponder", "findArrayIndexOfTodoItem"]
 - ["CSo11UIResponder", "findArrayIndexOfTodoObjectWithId"]
 - ["CSo11UIResponder", "findTodoObjectWithIdInArray"]
+- !private ["CSo11UIResponder", "font"]
 - ["CSo11UIResponder", "getObjectIdFromMessage"]
+- ["CSo11UIResponder", "giveMeNewSwipeCell"]
 - !private ["CSo11UIResponder", "indexPathForCell"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "insertRowAtIndex"]
@@ -1754,6 +1938,7 @@ depends-member:
 - !private ["CSo11UIResponder", "kSyncanoMessagePayloadIdKey"]
 - !private ["CSo11UIResponder", "kSyncanoMessagePayloadTitleKey"]
 - !private ["CSo11UIResponder", "navigationItem"]
+- !private ["CSo11UIResponder", "numberOfLines"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
 - !private ["CSo11UIResponder", "placeholder"]
 - ["CSo11UIResponder", "plusButtonPressed"]
@@ -1802,8 +1987,11 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "MGSwipeButton"]
 - !private ["PSo20UIScrollViewDelegate", "MGSwipeTableCell"]
 - !private ["PSo20UIScrollViewDelegate", "NSIndexPath"]
+- !private ["PSo20UIScrollViewDelegate", "NSMakeRange"]
+- !private ["PSo20UIScrollViewDelegate", "NSMutableAttributedString"]
 - !private ["PSo20UIScrollViewDelegate", "NSNotificationCenter"]
 - !private ["PSo20UIScrollViewDelegate", "NSOperationQueue"]
+- !private ["PSo20UIScrollViewDelegate", "NSStrikethroughStyleAttributeName"]
 - !private ["PSo20UIScrollViewDelegate", "SCChannel"]
 - ["PSo20UIScrollViewDelegate", "Syncano"]
 - ["PSo20UIScrollViewDelegate", "Todo"]
@@ -1811,6 +1999,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UIAlertController"]
 - !private ["PSo20UIScrollViewDelegate", "UIBarButtonItem"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
+- !private ["PSo20UIScrollViewDelegate", "UIFont"]
 - !private ["PSo20UIScrollViewDelegate", "UITextFieldTextDidChangeNotification"]
 - !private ["PSo20UIScrollViewDelegate", "addItemFromMessage"]
 - ["PSo20UIScrollViewDelegate", "chanellDidReceivedNotificationMessage"]
@@ -1825,6 +2014,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "findArrayIndexOfTodoObjectWithId"]
 - !private ["PSo20UIScrollViewDelegate", "findTodoObjectWithIdInArray"]
 - !private ["PSo20UIScrollViewDelegate", "getObjectIdFromMessage"]
+- !private ["PSo20UIScrollViewDelegate", "giveMeNewSwipeCell"]
 - !private ["PSo20UIScrollViewDelegate", "insertRowAtIndex"]
 - !private ["PSo20UIScrollViewDelegate", "kAPIisCompletedKey"]
 - ["PSo20UIScrollViewDelegate", "kSyncanoApiKey"]
@@ -1864,8 +2054,11 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "MGSwipeButton"]
 - !private ["PSo16UIStateRestoring", "MGSwipeTableCell"]
 - !private ["PSo16UIStateRestoring", "NSIndexPath"]
+- !private ["PSo16UIStateRestoring", "NSMakeRange"]
+- !private ["PSo16UIStateRestoring", "NSMutableAttributedString"]
 - !private ["PSo16UIStateRestoring", "NSNotificationCenter"]
 - !private ["PSo16UIStateRestoring", "NSOperationQueue"]
+- !private ["PSo16UIStateRestoring", "NSStrikethroughStyleAttributeName"]
 - !private ["PSo16UIStateRestoring", "SCChannel"]
 - ["PSo16UIStateRestoring", "Syncano"]
 - ["PSo16UIStateRestoring", "Todo"]
@@ -1873,6 +2066,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIAlertController"]
 - !private ["PSo16UIStateRestoring", "UIBarButtonItem"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
+- !private ["PSo16UIStateRestoring", "UIFont"]
 - !private ["PSo16UIStateRestoring", "UITextFieldTextDidChangeNotification"]
 - !private ["PSo16UIStateRestoring", "addAction"]
 - ["PSo16UIStateRestoring", "addItemFromMessage"]
@@ -1891,6 +2085,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "findArrayIndexOfTodoObjectWithId"]
 - ["PSo16UIStateRestoring", "findTodoObjectWithIdInArray"]
 - ["PSo16UIStateRestoring", "getObjectIdFromMessage"]
+- ["PSo16UIStateRestoring", "giveMeNewSwipeCell"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "insertRowAtIndex"]
 - !private ["PSo16UIStateRestoring", "kAPIisCompletedKey"]
@@ -1951,8 +2146,11 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "MGSwipeButton"]
 - !private ["PSo21UITableViewDataSource", "MGSwipeTableCell"]
 - !private ["PSo21UITableViewDataSource", "NSIndexPath"]
+- !private ["PSo21UITableViewDataSource", "NSMakeRange"]
+- !private ["PSo21UITableViewDataSource", "NSMutableAttributedString"]
 - !private ["PSo21UITableViewDataSource", "NSNotificationCenter"]
 - !private ["PSo21UITableViewDataSource", "NSOperationQueue"]
+- !private ["PSo21UITableViewDataSource", "NSStrikethroughStyleAttributeName"]
 - !private ["PSo21UITableViewDataSource", "SCChannel"]
 - ["PSo21UITableViewDataSource", "Syncano"]
 - ["PSo21UITableViewDataSource", "Todo"]
@@ -1960,6 +2158,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "UIAlertController"]
 - !private ["PSo21UITableViewDataSource", "UIBarButtonItem"]
 - !private ["PSo21UITableViewDataSource", "UIColor"]
+- !private ["PSo21UITableViewDataSource", "UIFont"]
 - !private ["PSo21UITableViewDataSource", "UITextFieldTextDidChangeNotification"]
 - !private ["PSo21UITableViewDataSource", "addItemFromMessage"]
 - ["PSo21UITableViewDataSource", "chanellDidReceivedNotificationMessage"]
@@ -1974,6 +2173,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "findArrayIndexOfTodoObjectWithId"]
 - !private ["PSo21UITableViewDataSource", "findTodoObjectWithIdInArray"]
 - !private ["PSo21UITableViewDataSource", "getObjectIdFromMessage"]
+- !private ["PSo21UITableViewDataSource", "giveMeNewSwipeCell"]
 - !private ["PSo21UITableViewDataSource", "insertRowAtIndex"]
 - !private ["PSo21UITableViewDataSource", "kAPIisCompletedKey"]
 - ["PSo21UITableViewDataSource", "kSyncanoApiKey"]
@@ -2013,8 +2213,11 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "MGSwipeButton"]
 - !private ["PSo19UITableViewDelegate", "MGSwipeTableCell"]
 - !private ["PSo19UITableViewDelegate", "NSIndexPath"]
+- !private ["PSo19UITableViewDelegate", "NSMakeRange"]
+- !private ["PSo19UITableViewDelegate", "NSMutableAttributedString"]
 - !private ["PSo19UITableViewDelegate", "NSNotificationCenter"]
 - !private ["PSo19UITableViewDelegate", "NSOperationQueue"]
+- !private ["PSo19UITableViewDelegate", "NSStrikethroughStyleAttributeName"]
 - !private ["PSo19UITableViewDelegate", "SCChannel"]
 - ["PSo19UITableViewDelegate", "Syncano"]
 - ["PSo19UITableViewDelegate", "Todo"]
@@ -2022,6 +2225,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "UIAlertController"]
 - !private ["PSo19UITableViewDelegate", "UIBarButtonItem"]
 - !private ["PSo19UITableViewDelegate", "UIColor"]
+- !private ["PSo19UITableViewDelegate", "UIFont"]
 - !private ["PSo19UITableViewDelegate", "UITextFieldTextDidChangeNotification"]
 - !private ["PSo19UITableViewDelegate", "addItemFromMessage"]
 - ["PSo19UITableViewDelegate", "chanellDidReceivedNotificationMessage"]
@@ -2036,6 +2240,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "findArrayIndexOfTodoObjectWithId"]
 - !private ["PSo19UITableViewDelegate", "findTodoObjectWithIdInArray"]
 - !private ["PSo19UITableViewDelegate", "getObjectIdFromMessage"]
+- !private ["PSo19UITableViewDelegate", "giveMeNewSwipeCell"]
 - !private ["PSo19UITableViewDelegate", "insertRowAtIndex"]
 - !private ["PSo19UITableViewDelegate", "kAPIisCompletedKey"]
 - ["PSo19UITableViewDelegate", "kSyncanoApiKey"]
@@ -2082,8 +2287,11 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "MGSwipeButton"]
 - !private ["PSo18UITraitEnvironment", "MGSwipeTableCell"]
 - !private ["PSo18UITraitEnvironment", "NSIndexPath"]
+- !private ["PSo18UITraitEnvironment", "NSMakeRange"]
+- !private ["PSo18UITraitEnvironment", "NSMutableAttributedString"]
 - !private ["PSo18UITraitEnvironment", "NSNotificationCenter"]
 - !private ["PSo18UITraitEnvironment", "NSOperationQueue"]
+- !private ["PSo18UITraitEnvironment", "NSStrikethroughStyleAttributeName"]
 - !private ["PSo18UITraitEnvironment", "SCChannel"]
 - ["PSo18UITraitEnvironment", "Syncano"]
 - ["PSo18UITraitEnvironment", "Todo"]
@@ -2091,11 +2299,13 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIAlertController"]
 - !private ["PSo18UITraitEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UITextFieldTextDidChangeNotification"]
 - !private ["PSo18UITraitEnvironment", "accessoryType"]
 - !private ["PSo18UITraitEnvironment", "addAction"]
 - ["PSo18UITraitEnvironment", "addItemFromMessage"]
 - !private ["PSo18UITraitEnvironment", "addTextFieldWithConfigurationHandler"]
+- !private ["PSo18UITraitEnvironment", "attributedText"]
 - ["PSo18UITraitEnvironment", "chanellDidReceivedNotificationMessage"]
 - ["PSo18UITraitEnvironment", "channel"]
 - ["PSo18UITraitEnvironment", "channel.storage"]
@@ -2111,7 +2321,9 @@ depends-member:
 - ["PSo18UITraitEnvironment", "findArrayIndexOfTodoItem"]
 - ["PSo18UITraitEnvironment", "findArrayIndexOfTodoObjectWithId"]
 - ["PSo18UITraitEnvironment", "findTodoObjectWithIdInArray"]
+- !private ["PSo18UITraitEnvironment", "font"]
 - ["PSo18UITraitEnvironment", "getObjectIdFromMessage"]
+- ["PSo18UITraitEnvironment", "giveMeNewSwipeCell"]
 - !private ["PSo18UITraitEnvironment", "indexPathForCell"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "insertRowAtIndex"]
@@ -2123,6 +2335,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "kSyncanoMessagePayloadIdKey"]
 - !private ["PSo18UITraitEnvironment", "kSyncanoMessagePayloadTitleKey"]
 - !private ["PSo18UITraitEnvironment", "navigationItem"]
+- !private ["PSo18UITraitEnvironment", "numberOfLines"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
 - !private ["PSo18UITraitEnvironment", "placeholder"]
 - ["PSo18UITraitEnvironment", "plusButtonPressed"]
@@ -2164,11 +2377,14 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "accessoryType"]
+- !private ["CSo6UIView", "attributedText"]
 - !private ["CSo6UIView", "deleteRowsAtIndexPaths"]
 - !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo6UIView", "font"]
 - !private ["CSo6UIView", "indexPathForCell"]
 - !private ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "insertRowsAtIndexPaths"]
+- !private ["CSo6UIView", "numberOfLines"]
 - !private ["CSo6UIView", "placeholder"]
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "reloadRowsAtIndexPaths"]
@@ -2177,12 +2393,16 @@ depends-member:
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textLabel"]
 - !private ["CSo16UIViewController", "Bool"]
+- ["CSo16UIViewController", "CGFloat"]
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "MGSwipeButton"]
-- !private ["CSo16UIViewController", "MGSwipeTableCell"]
+- ["CSo16UIViewController", "MGSwipeTableCell"]
 - ["CSo16UIViewController", "NSIndexPath"]
+- !private ["CSo16UIViewController", "NSMakeRange"]
+- !private ["CSo16UIViewController", "NSMutableAttributedString"]
 - !private ["CSo16UIViewController", "NSNotificationCenter"]
 - !private ["CSo16UIViewController", "NSOperationQueue"]
+- !private ["CSo16UIViewController", "NSStrikethroughStyleAttributeName"]
 - ["CSo16UIViewController", "SCChannel"]
 - ["CSo16UIViewController", "SCChannelNotificationMessage"]
 - ["CSo16UIViewController", "String"]
@@ -2192,6 +2412,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UIAlertController"]
 - !private ["CSo16UIViewController", "UIBarButtonItem"]
 - !private ["CSo16UIViewController", "UIColor"]
+- !private ["CSo16UIViewController", "UIFont"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
 - !private ["CSo16UIViewController", "UITextFieldTextDidChangeNotification"]
@@ -2212,6 +2433,7 @@ depends-member:
 - ["CSo16UIViewController", "findArrayIndexOfTodoObjectWithId"]
 - ["CSo16UIViewController", "findTodoObjectWithIdInArray"]
 - ["CSo16UIViewController", "getObjectIdFromMessage"]
+- ["CSo16UIViewController", "giveMeNewSwipeCell"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "insertRowAtIndex"]
 - !private ["CSo16UIViewController", "kAPIisCompletedKey"]
@@ -2254,14 +2476,19 @@ depends-member:
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - ["CSo16UIViewController", ""]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "characters"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "localized"]
 - !private ["C16todo_app_syncano14ViewController", "Bool"]
+- ["C16todo_app_syncano14ViewController", "CGFloat"]
 - ["C16todo_app_syncano14ViewController", "Int"]
 - !private ["C16todo_app_syncano14ViewController", "MGSwipeButton"]
-- !private ["C16todo_app_syncano14ViewController", "MGSwipeTableCell"]
+- ["C16todo_app_syncano14ViewController", "MGSwipeTableCell"]
 - ["C16todo_app_syncano14ViewController", "NSIndexPath"]
+- !private ["C16todo_app_syncano14ViewController", "NSMakeRange"]
+- !private ["C16todo_app_syncano14ViewController", "NSMutableAttributedString"]
 - !private ["C16todo_app_syncano14ViewController", "NSNotificationCenter"]
 - !private ["C16todo_app_syncano14ViewController", "NSOperationQueue"]
+- !private ["C16todo_app_syncano14ViewController", "NSStrikethroughStyleAttributeName"]
 - ["C16todo_app_syncano14ViewController", "SCChannel"]
 - ["C16todo_app_syncano14ViewController", "SCChannelNotificationMessage"]
 - ["C16todo_app_syncano14ViewController", "String"]
@@ -2271,6 +2498,7 @@ depends-member:
 - !private ["C16todo_app_syncano14ViewController", "UIAlertController"]
 - !private ["C16todo_app_syncano14ViewController", "UIBarButtonItem"]
 - !private ["C16todo_app_syncano14ViewController", "UIColor"]
+- !private ["C16todo_app_syncano14ViewController", "UIFont"]
 - ["C16todo_app_syncano14ViewController", "UITableView"]
 - ["C16todo_app_syncano14ViewController", "UITableViewCell"]
 - !private ["C16todo_app_syncano14ViewController", "UITextFieldTextDidChangeNotification"]
@@ -2290,6 +2518,7 @@ depends-member:
 - ["C16todo_app_syncano14ViewController", "findArrayIndexOfTodoObjectWithId"]
 - ["C16todo_app_syncano14ViewController", "findTodoObjectWithIdInArray"]
 - ["C16todo_app_syncano14ViewController", "getObjectIdFromMessage"]
+- ["C16todo_app_syncano14ViewController", "giveMeNewSwipeCell"]
 - ["C16todo_app_syncano14ViewController", "init"]
 - ["C16todo_app_syncano14ViewController", "insertRowAtIndex"]
 - !private ["C16todo_app_syncano14ViewController", "kAPIisCompletedKey"]
@@ -2345,13 +2574,18 @@ depends-member:
 - !private ["PSs10_ArrayType", "removeAtIndex"]
 - !private ["PSs10_ArrayType", "subscript"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "characters"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "localized"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "Stride"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "characters"]
 - !private ["PSs32_BuiltinStringLiteralConvertible", "localized"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "characters"]
 - !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "localized"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "characters"]
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "localized"]
+- !private ["PSs16_CocoaStringType", "characters"]
 - !private ["PSs16_CocoaStringType", "localized"]
 - !private ["PSs24_DestructorSafeContainer", "Element"]
 - !private ["PSs24_DestructorSafeContainer", "Generator"]
@@ -2387,6 +2621,7 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "_Buffer"]
 - !private ["PSs21_ObjectiveCBridgeable", "_Element"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "characters"]
 - !private ["PSs21_ObjectiveCBridgeable", "count"]
 - !private ["PSs21_ObjectiveCBridgeable", "filter"]
 - !private ["PSs21_ObjectiveCBridgeable", "first"]
@@ -2412,16 +2647,20 @@ depends-member:
 - !private ["PSs12_Reflectable", "_Element"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "accessoryType"]
+- !private ["PSs12_Reflectable", "attributedText"]
+- !private ["PSs12_Reflectable", "characters"]
 - !private ["PSs12_Reflectable", "count"]
 - !private ["PSs12_Reflectable", "deleteRowsAtIndexPaths"]
 - !private ["PSs12_Reflectable", "dequeueReusableCellWithIdentifier"]
 - !private ["PSs12_Reflectable", "filter"]
 - !private ["PSs12_Reflectable", "first"]
+- !private ["PSs12_Reflectable", "font"]
 - !private ["PSs12_Reflectable", "indexOf"]
 - !private ["PSs12_Reflectable", "indexPathForCell"]
 - ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "insertRowsAtIndexPaths"]
 - !private ["PSs12_Reflectable", "localized"]
+- !private ["PSs12_Reflectable", "numberOfLines"]
 - !private ["PSs12_Reflectable", "placeholder"]
 - !private ["PSs12_Reflectable", "reloadData"]
 - !private ["PSs12_Reflectable", "reloadRowsAtIndexPaths"]
@@ -2449,7 +2688,9 @@ depends-nominal:
 - !private "Sb"
 - !private "PSs25BooleanLiteralConvertible"
 - !private "PSs11BooleanType"
+- !private "V12CoreGraphics7CGFloat"
 - "PSs11CVarArgType"
+- !private "VSS13CharacterView"
 - "PSs14CollectionType"
 - !private "PSs10Comparable"
 - "PSs28CustomDebugStringConvertible"
@@ -2463,6 +2704,7 @@ depends-nominal:
 - !private "PSs13GeneratorType"
 - "PSs8Hashable"
 - !private "SQ"
+- !private "VVSS13CharacterView5Index"
 - "PSs9Indexable"
 - !private "VSs17IndexingGenerator"
 - !private "Si"
@@ -2478,10 +2720,12 @@ depends-nominal:
 - "PSs21MutableCollectionType"
 - "PSs16MutableIndexable"
 - "PSs16MutableSliceable"
+- !private "CSo18NSAttributedString"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
 - !private "CSo11NSIndexPath"
+- !private "CSo25NSMutableAttributedString"
 - !private "PSo16NSMutableCopying"
 - !private "CSo20NSNotificationCenter"
 - !private "CSo8NSNumber"
@@ -2532,6 +2776,7 @@ depends-nominal:
 - !private "CSo9UIControl"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
+- !private "CSo6UIFont"
 - !private "PSo27UIGestureRecognizerDelegate"
 - !private "PSo10UIKeyInput"
 - !private "CSo7UILabel"
@@ -2630,4 +2875,4 @@ depends-external:
 - "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Build/Products/Debug-iphoneos/MGSwipeTableCell.h"
 - "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Build/Products/Debug-iphoneos/MGSwipeButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
-interface-hash: "35f606091235e5f5fbe86303d77f69c3"
+interface-hash: "3d039ed8bfcddfebe82de7099a34a966"

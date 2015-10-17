@@ -1,9 +1,9 @@
 version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
 options: "9c221aa05086d67978f3d653bc354cfa"
-build_time: [498088956, 729972000]
+build_time: [498321942, 781160000]
 inputs: 
+	"/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/todo-app-syncano/Todo.swift": [9223372036854775807, 0]
 	"/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/todo-app-syncano/AppDelegate.swift": [9223372036854775807, 0]
-	"/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/todo-app-syncano/String+localization.swift": [9223372036854775807, 0]
 	"/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/todo-app-syncano/AppSettings.swift": [9223372036854775807, 0]
 	"/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/todo-app-syncano/ViewController.swift": [9223372036854775807, 0]
-	"/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/todo-app-syncano/Todo.swift": [9223372036854775807, 0]
+	"/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/todo-app-syncano/String+localization.swift": [9223372036854775807, 0]

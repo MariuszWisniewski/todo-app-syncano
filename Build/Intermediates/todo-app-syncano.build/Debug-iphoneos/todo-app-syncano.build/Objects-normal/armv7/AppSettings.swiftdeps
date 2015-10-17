@@ -9,12 +9,12 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
+- "kSyncanoApiKey"
+- "StringLiteralType"
+- "kSyncanoInstanceName"
+- "kSyncanoMessagePayloadTitleKey"
 - "kSyncanoChannelName"
 - "kSyncanoMessagePayloadIdKey"
-- "kSyncanoMessagePayloadTitleKey"
-- "StringLiteralType"
-- "kSyncanoApiKey"
-- "kSyncanoInstanceName"
 depends-member:
 depends-nominal:
 depends-dynamic-lookup:
@@ -73,4 +73,4 @@ depends-external:
 - "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Build/Products/Debug-iphoneos/MGSwipeTableCell.h"
 - "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/Build/Products/Debug-iphoneos/MGSwipeButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
-interface-hash: "2ff7d2db3d3e5b74b96ea39aece4a382"
+interface-hash: "bfbdf837788a78fa9aa55d49bb9f4664"

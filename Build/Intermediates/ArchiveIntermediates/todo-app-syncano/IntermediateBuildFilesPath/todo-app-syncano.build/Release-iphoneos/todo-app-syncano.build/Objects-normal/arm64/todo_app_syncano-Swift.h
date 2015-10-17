@@ -87,6 +87,7 @@ typedef int swift_int3  __attribute__((__ext_vector_type__(3)));
 typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import CoreGraphics;
 #endif
 
 #import "/Users/mariuszwisniewski/Developing/GitHub/todo-app-syncano/todo-app-syncano-Bridging-Header.h"
@@ -166,16 +167,17 @@ SWIFT_CLASS("_TtC16todo_app_syncano14ViewController")
 @end
 
 @class NSIndexPath;
-
-@interface ViewController (SWIFT_EXTENSION(todo_app_syncano)) <UITableViewDelegate, UIScrollViewDelegate>
-- (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
-@end
-
 @class UITableViewCell;
 
 @interface ViewController (SWIFT_EXTENSION(todo_app_syncano)) <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+@end
+
+
+@interface ViewController (SWIFT_EXTENSION(todo_app_syncano)) <UITableViewDelegate, UIScrollViewDelegate>
+- (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 @end
 
 @class SCChannelNotificationMessage;
